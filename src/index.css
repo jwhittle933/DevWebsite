@@ -1,0 +1,114 @@
+html {
+  background-color: #F2E8C3;
+  background-image: url(./coding_background.jpg);
+  background-size: cover;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+li {
+  list-style: none;
+}
+h2 {
+  font-family: 'Calibri light';
+}
+p {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.25em;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+}
+figure {
+  width: 190px;
+  overflow: hidden;
+  margin-left: 5px;
+  border-radius: 10px;
+  float:right;
+  clear:right;
+}
+img {
+ display: block;
+ width: 100%;
+}
+.App {
+  display: flex;
+}
+.main-view {
+  height: 75vh;
+  width: 150vh;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  padding: 15px;
+  background-color: #F1F0E2;
+  border-radius: 10px;
+  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.9);
+}
+.header-wrapper {
+  display: flex;
+  height: 50px;
+}
+.header-wrapper a {
+  color: black;
+}
+.item-large {
+  display: flex;
+  flex-grow: 5;
+  justify-content: left;
+  align-items: center;
+  font-family: 'Cinzel', serif;
+  font-size: 2.5em;
+  /* border: .5px solid black; */
+}
+.item {
+  display: flex;
+  flex-grow: 1;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 5px 5px 0 0;
+  margin: 3px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: 'EB Garamond', serif;
+  color: black;
+}
+.active { /*Add class using jQuery*/
+  flex-grow: 3;
+  /* background-color: #F7E29C; */
+  border-bottom: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+}
+.item:hover {
+  text-shadow:1px 1px rgba(0, 0, 0, 0.4);
+}
+.wrapper {
+  height: 55vh;
+  width: 130vh;
+  overflow: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 25px;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
