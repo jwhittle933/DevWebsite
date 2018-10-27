@@ -7,7 +7,7 @@ class Developer extends Component {
       <div className="wrapper">
         <h2>Developer</h2>
 
-        <p><i>(If you'd like a 50,000-ft overview of this content, skip to the "Projects" tab)</i></p>
+        <p><i>(If you'd like a 50,000-ft overview of this content, skip to the Projects tab)</i></p>
 
         <p>My journey into development started in early 2018 with SQL at the recommendation of a friend. After exhausting the free resources I could find online, I turned to Treehouse, which is free to Louisville residents through the public library. The only catch is that you must remain active every 7 days to continue your membership.</p>
 

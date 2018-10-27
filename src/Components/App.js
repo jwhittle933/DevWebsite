@@ -8,8 +8,8 @@ import Welcome from './Welcome'
 import About from './About'
 import Developer from './Developer'
 import Projects from './Projects'
-import Tutoring from './Tutoring'
 import Contact from './Contact'
+import Footer from './Footer'
 
 class App extends Component {
   render() {
@@ -22,8 +22,8 @@ class App extends Component {
             <Route path="/about" component={ About } />
             <Route exact path="/developer" component={ Developer } />
             <Route path="/projects" component={ Projects } />
-            <Route path="/tutoring" component={ Tutoring } />
             <Route path="/contact" component={ Contact } />
+            <Footer />
           </div>
         </Router>
       </div>
