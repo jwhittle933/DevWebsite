@@ -35,14 +35,6 @@ a {
 a:visited {
   color: blue;
 }
-figure {
-  width: 190px;
-  overflow: hidden;
-  margin-left: 5px;
-  border-radius: 10px;
-  float:right;
-  clear:right;
-}
 img {
  display: block;
  width: 100%;
@@ -116,8 +108,10 @@ img {
 }
 .footer{
   display: flex;
+  align-items: center;
+  /* justify-content: center; */
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.7;
   position: fixed;
   width: 100vw;
   height: 40px;
@@ -126,22 +120,48 @@ img {
   padding: 5;
 }
 .footer p {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: 1.2em;
   width: auto;
-  padding: 0;
+  padding: 1px;
   margin: 5px;
   color: white;
 }
-/* .footer img {
-  height: 100px;
-} */
 .App-logo {
   animation: App-logo-spin infinite 5s linear;
   height: 6vmin;
   width: 40px;
+}
+.logo-flex {
+  display: flex;
+  justify-content: left;
+}
+.logo-flex a {
+  height: 50px;
+  width: 50px;
+}
+.facebook {
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+  padding: 4px;
+}
+.twitter {
+  height: 30px;
+  width: 30px;
+}
+.instagram {
+  height: 20px;
+  width: 20px;
+  padding: 4px;
+}
+.linkedin {
+  height: 20px;
+  width: 25px;
+  border-radius: 3px;
+  padding: 4px;
+}
+.logo-link {
+  margin: 10px;
 }
 @keyframes App-logo-spin {
   from {
@@ -150,4 +170,31 @@ img {
   to {
     transform: rotate(360deg);
   }
+}
+#figure-div {
+  position: fixed;
+  width: 400px;
+}
+#about-figure {
+  width: 200%;
+  height: 245px;
+  margin: 5px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#about-content {
+  background-color: #F1F0E2;
+  opacity: .9;
+  margin-top: 250px;
+  padding: 15px;
+  z-index: 2;
+}
+#transparent-div {
+  height: 250px;
+  opacity: 0.0;
+}
+#background-img {
+  margin-top: -150px;
 }

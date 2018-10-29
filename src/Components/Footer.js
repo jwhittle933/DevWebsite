@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <div className="footer">
         <p>Built using React</p>
-        <img src={logo} className="App-logo" alt="logo"/>
+        <img src={ logo } className="App-logo" alt="logo"/>
       </div>
     );
   }
