@@ -19,11 +19,11 @@ class Contact extends Component {
           <a href="https://twitter.com/JonathanWhittle" target="_blank" rel="noopener noreferrer">
             <img src={ twitter } className="twitter logo-link" alt="logo"/>
           </a>
-          <a href="https://www.instagram.com/jwhittl/" target="_blank" rel="noopener noreferrer">
-            <img src={ instagram } className="instagram logo-link" alt="logo"/>
-          </a>
           <a href="http://www.linkedin.com/in/jonathan-whittle-161590169" target="_blank" rel="noopener noreferrer">
             <img src={ linkedin } className="linkedin logo-link" alt="logo"/>
+          </a>
+          <a href="https://www.instagram.com/jwhittl/" target="_blank" rel="noopener noreferrer">
+            <img src={ instagram } className="instagram logo-link" alt="logo"/>
           </a>
         </div>
       </div>

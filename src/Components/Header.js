@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 
 class Header extends Component {
-  //Add js method controlling add/remove active class
   state = {
-    selected: ''
+    selected: 'welcome'
   }
   makeActive(choice) {
     this.setState({selected: choice})
