@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 // import './App.css';
 
 //Components
@@ -8,28 +8,39 @@ import Welcome from './Welcome'
 import About from './About'
 import Developer from './Developer'
 import Projects from './Projects'
-import Skills from './Skills'
 import Contact from './Contact'
 import Footer from './Footer'
+import NotFound from './NotFound'
 
 class App extends Component {
+  state = {
+    hasError: false
+  }
+  componentDidCatch() {
+    this.setState({ hasError: true})
+  }
   render() {
-    return (
+    if (this.state.hasError){
+      return <h1>Oh no! Something went wrong.</h1>
+    } else {
+      return (
       <div className="App">
         <Router>
           <div className="main-view">
             <Header />
-            <Route exact path="/" component={ Welcome } />
-            <Route path="/about" component={ About } />
-            <Route exact path="/developer" component={ Developer } />
-            <Route path="/projects" component={ Projects } />
-            <Route path="/skills" component={ Skills } />
-            <Route path="/contact" component={ Contact } />
+            <Switch>
+              <Route exact path="/" render={ () => <Welcome /> } />
+              <Route exact path="/about" render={ () => <About /> } />
+              <Route exact path="/developer" render={ () => <Developer /> } />
+              <Route exact path="/projects" render={ () => <Projects /> } />
+              <Route exact path="/contact" render={ () => <Contact /> } />
+              <Route component={ NotFound } />
+            </Switch>
             <Footer />
           </div>
         </Router>
       </div>
-    );
+    )}
   }
 }
 

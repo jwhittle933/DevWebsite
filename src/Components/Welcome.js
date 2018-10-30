@@ -6,7 +6,7 @@ class Welcome extends Component {
     return (
       <div className="wrapper">
         <h2>Welcome</h2>
-        <p>Welcome to my devloper site. Thank you for stopping by, I hope you enjoy your experience. This page is meant to provide an introduction to Jonathan Whittle, the developer. I created this site using React, React Router, and Express.</p>
+        <p>Welcome! Thank you for stopping by, I hope you enjoy your experience. This page is meant to provide an introduction to Jonathan Whittle, the developer. I created this site using React, React Router, and Express.</p>
       </div>
     );
   }

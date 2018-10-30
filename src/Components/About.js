@@ -5,13 +5,13 @@ import Jon from '../img/front-wedding.jpg'
 class About extends Component {
   render() {
     return (
-      <div className="wrapper about">
-        <div id="figure-div">
-          <figure id="about-figure">
-            <img id="background-img" src={Jon} alt="Jonathan"/>
+      <div className="wrapper">
+        <div className="figure-div">
+          <figure className="about-figure">
+            <img className="background-img" src={Jon} alt="Jonathan"/>
           </figure>
         </div>
-        <div id="about-content">
+        <div className="about-content">
             <h2>About Me</h2>
 
             <p>I grew up in a small South Carolina town (Sumter), in a home that held to traditional Christian values. In high school, I excelled at STEM subjects and participated in an collegiate Engineering program. </p>

@@ -19,7 +19,6 @@ class Header extends Component {
         <Link className={ this.isActive('about')} to="/about" onClick={this.makeActive.bind(this, 'about')}>About</Link>
         <Link className={ this.isActive('developer') } to="/developer" onClick={this.makeActive.bind(this, 'developer')}>Developer</Link>
         <Link className={ this.isActive('projects') } to="/projects" onClick={this.makeActive.bind(this, 'projects')}>Projects</Link>
-        <Link className={ this.isActive('skills') } to="/skills" onClick={this.makeActive.bind(this, 'skills')}>Skills</Link>
         <Link className={ this.isActive('contacts') } to="/contact" onClick={this.makeActive.bind(this, 'contacts')}>Contact</Link>
       </div>
     );
