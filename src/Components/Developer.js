@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 
 
 class Developer extends Component {
+  scrollToSkills(){
+    document.getElementById('skills').scrollIntoView({ behavior: 'smooth'})
+  }
   render() {
     return (
-      <div className="wrapper">
+      <div className="wrapper developer">
         <h2>Developer</h2>
 
-        <p><i>(If you'd like a 50,000-ft overview of this content, skip to the Projects tab)</i></p>
+        <p><i>(If you'd like a 50,000-ft overview of this content, skip to the Projects tab, or to view a skills summary, skip to the list of <a href="#skill" onClick={ this.scrollToSkills }>skills</a>)</i></p>
 
         <p>My journey into development started in late 2017 with SQL at the recommendation of a friend. After exhausting the free resources I could find online, I turned to Treehouse, which is free to Louisville residents through the public library. The only catch is that you must remain active every 7 days to continue your membership.</p>
 
@@ -22,6 +25,31 @@ class Developer extends Component {
         <p>Following the <i>sort-of</i> completion of TechApp2.0 (it still needs authentication and bug fixes), I reopned another old project. <a href="https://github.com/jwhittle933/JonathansJumpnJacks" rel="noopener noreferrer" target="_blank">Jonathan's Jump'n Jacks</a>, originally built in native JavaScript, then converted to Vue.js, now built using React, is a fitness web-app that does nutrition calculations and provides users with nutrition advice and meal-planning tailored to their needs.</p>
 
         <p>In October 2018, I became the site manager for <a href="http://www.philosophipotamus.com" rel="noopener noreferrer" target="_blank">Philosophipotamus</a>, a WordPress site for the philosophical musings of Dr. Mark Coppenger, a professor at The Southern Baptist Theological Seminary. I mainly upload new posts, but also play with the back-end php to optimize the UI.</p>
+
+        <h2 id="skills">Skills Summary</h2>
+        <ul>
+          <li>
+            <strong>HTML</strong>: Basic HTML, HTML canvas, HTML media playback
+          </li>
+          <li>
+            <strong>CSS</strong>: Vanilla CSS, Bootstrap, less, Sass
+          </li>
+          <li>
+            <strong>JavaScript</strong>: Capable in traditional, imperative programming with a familiarity of functional, recursive approaches. Proficiency with AJAX (xhr, fetch API, axios). High level proficiency with Vue.js and React, plus a familiarity with AngularJS, Node.js, Express, and jQuery.
+          </li>
+          <li>
+            <strong>PHP</strong>: Proficiency in vanilla php with a preference (and strong love) for Laravel. Familiarity with WordPress CMS.
+          </li>
+        </ul>
+        <h3>Minor Skills</h3>
+        <ul>
+          <li>
+            <strong>C#</strong>: Basic introduction to C# programming, including Object-Oriented C#
+          </li>
+          <li>
+            <strong>Swift</strong>: Basic introduction to Swift programming
+          </li>
+        </ul>
       </div>
     );
   }

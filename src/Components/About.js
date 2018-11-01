@@ -5,7 +5,7 @@ import Jon from '../img/front-wedding.jpg'
 class About extends Component {
   render() {
     return (
-      <div className="wrapper">
+      <div className="wrapper about">
         <div className="figure-div">
           <figure className="about-figure">
             <img className="background-img" src={Jon} alt="Jonathan"/>
