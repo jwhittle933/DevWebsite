@@ -7,13 +7,13 @@
 /coverage
 
 # development
-# /src/*
-# /public/*
-# /build/static/css/*.map
-# /build/static/js/*.map
+/src/*
+/public/*
+/build/static/css/*.map
+/build/static/js/*.map
 
 # production
-/build
+# /build
 
 # misc
 .DS_Store
