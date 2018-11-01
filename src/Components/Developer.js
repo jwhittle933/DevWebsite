@@ -10,7 +10,7 @@ class Developer extends Component {
       <div className="wrapper developer">
         <h2>Developer</h2>
 
-        <p><i>(If you'd like a 50,000-ft overview of this content, skip to the Projects tab, or to view a skills summary, skip to the list of <a href="#skill" onClick={ this.scrollToSkills }>skills</a>)</i></p>
+        <p><i>(If you'd like a 50,000-ft overview of this content, skip to the Projects tab; to view a skills summary, skip to the list of <a href="#skill" onClick={ this.scrollToSkills }>skills</a>)</i></p>
 
         <p>My journey into development started in late 2017 with SQL at the recommendation of a friend. After exhausting the free resources I could find online, I turned to Treehouse, which is free to Louisville residents through the public library. The only catch is that you must remain active every 7 days to continue your membership.</p>
 
@@ -29,7 +29,7 @@ class Developer extends Component {
         <h2 id="skills">Skills Summary</h2>
         <ul>
           <li>
-            <strong>HTML</strong>: Basic HTML, HTML canvas, HTML media playback
+            <strong>HTML</strong>: Basic HTML, HTML canvas, HTML media playback, Pug templating
           </li>
           <li>
             <strong>CSS</strong>: Vanilla CSS, Bootstrap, less, Sass
@@ -40,7 +40,15 @@ class Developer extends Component {
           <li>
             <strong>PHP</strong>: Proficiency in vanilla php with a preference (and strong love) for Laravel. Familiarity with WordPress CMS.
           </li>
+          <li>
+            <strong>MySQL/SQLite</strong>: selects, joins, aggregate
+            functions; integration with php
+          </li>
+          <li>
+            <strong>Git</strong>
+          </li>
         </ul>
+
         <h3>Minor Skills</h3>
         <ul>
           <li>
@@ -50,6 +58,7 @@ class Developer extends Component {
             <strong>Swift</strong>: Basic introduction to Swift programming
           </li>
         </ul>
+
       </div>
     );
   }

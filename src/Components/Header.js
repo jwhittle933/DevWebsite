@@ -1,17 +1,23 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router'
+
 
 class Header extends Component {
   state = {
-    selected: 'welcome'
+    currentPage: 'welcome',
+    navPath: this.props.location.pathname
   }
-  makeActive(choice) {
-    this.setState({selected: choice})
+  makeActive(click) {
+    this.setState({currentPage: click})
   }
   isActive(value) {
-    return 'item ' + ((value === this.state.selected) ? 'active' : '')
+    return 'item ' + ((value === this.state.currentPage) ? 'active' : '')
   }
   render() {
+    const { location } = this.props
+    // eslint-disable-next-line
+    let path = location.pathname
     return (
       <div className="header-wrapper">
         <div className="item-large">Jonathan Whittle</div>
@@ -25,4 +31,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { withRouter } from 'react-router'
 // import './App.css';
 
 //Components
@@ -21,19 +22,19 @@ class App extends Component {
   }
   render() {
     if (this.state.hasError){
-      return <h1>Oh no! Something went wrong.</h1>
+      return <div id="error"><h1>Oh no! Something went wrong.</h1></div>
     } else {
       return (
       <div className="App">
         <Router>
           <div className="main-view">
-            <Header />
+            <Header location={withRouter} />
             <Switch>
               <Route exact path="/" render={ () => <Welcome /> } />
-              <Route exact path="/about" render={ () => <About /> } />
-              <Route exact path="/developer" render={ () => <Developer /> } />
-              <Route exact path="/projects" render={ () => <Projects /> } />
-              <Route exact path="/contact" render={ () => <Contact /> } />
+              <Route path="/about" render={ () => <About /> } />
+              <Route path="/developer" render={ () => <Developer /> } />
+              <Route path="/projects" render={ () => <Projects /> } />
+              <Route path="/contact" render={ () => <Contact /> } />
               <Route component={ NotFound } />
             </Switch>
             <Footer />
