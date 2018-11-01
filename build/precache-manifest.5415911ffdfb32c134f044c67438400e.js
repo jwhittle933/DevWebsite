@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/flogo_RGB_HEX-144.12bccf06.svg"
   },
   {
-    "revision": "c68df5c5585c900dae22",
-    "url": "/static/css/main.fef689ee.chunk.css"
+    "revision": "48a279d5edb18057c6ae",
+    "url": "/static/css/main.26bace1f.chunk.css"
   },
   {
     "revision": "bbb63d50e81ff2e9974b",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/static/media/front-wedding.1ed2ccd8.jpg"
   },
   {
-    "revision": "c68df5c5585c900dae22",
-    "url": "/static/js/main.c68df5c5.chunk.js"
+    "revision": "48a279d5edb18057c6ae",
+    "url": "/static/js/main.48a279d5.chunk.js"
   },
   {
     "revision": "a7a925c7c07f163f3274df0c1ab2c321",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/static/media/coding_background.04eb830e.jpg"
   },
   {
-    "revision": "2a74d252876b24c26b35dec2cfcada72",
+    "revision": "7b1e069aab373a3aa582933cc3f8a18a",
     "url": "/index.html"
   }
 ];
