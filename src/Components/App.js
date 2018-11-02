@@ -13,13 +13,18 @@ import Contact from './Contact'
 import Footer from './Footer'
 import NotFound from './NotFound'
 
-class App extends Component {
-  state = {
-    hasError: false
+export default class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      hasError: false
+    }
   }
+
   componentDidCatch() {
     this.setState({ hasError: true})
   }
+
   render() {
     if (this.state.hasError){
       return <div id="error"><h1>Oh no! Something went wrong.</h1></div>
@@ -44,5 +49,3 @@ class App extends Component {
     )}
   }
 }
-
-export default App;

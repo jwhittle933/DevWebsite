@@ -4,9 +4,12 @@ import { withRouter } from 'react-router'
 
 
 class Header extends Component {
-  state = {
-    currentPage: 'welcome',
-    navPath: this.props.location.pathname
+  constructor(){
+    super()
+    this.state = {
+      currentPage: 'welcome',
+      navPath: this.props.location.pathname
+    }
   }
   makeActive(click) {
     this.setState({currentPage: click})

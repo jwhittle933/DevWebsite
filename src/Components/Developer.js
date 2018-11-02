@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 
 class Developer extends Component {
+
   scrollToSkills(){
     document.getElementById('skills').scrollIntoView({ behavior: 'smooth'})
   }
+
   render() {
     return (
       <div className="wrapper developer">
