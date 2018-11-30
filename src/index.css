@@ -161,15 +161,9 @@ img {
   height: 50px;
   width: 50px;
 }
-.social-background {
-  background-color: white;
-  border-radius: 5px;
-  margin: 5px;
-  border: 0.5px solid black;
-}
 .facebook {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   border-radius: 4px;
   padding: 4px;
 }
@@ -180,8 +174,8 @@ img {
   fill: #fff;
 }
 .twitter {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
 }
 .tcls-1 {
   fill: none;
@@ -190,44 +184,28 @@ img {
   fill: #1da1f2;
 }
 .instagram {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   padding: 4px;
+}
+.instafill{
+  fill: brown;
 }
 .linkedin {
-  height: 20px;
-  width: 25px;
+  height: 30px;
+  width: 35px;
   border-radius: 3px;
   padding: 4px;
+}
+.linkfill{
+  fill: darkslateblue;
 }
 .gmail {
-  height: 20px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
   border-radius: 3px;
   padding: 4px;
 }
-.gm-1 {
-  fill:#E0E0E0;
-}
-.gm-2 {
-  fill: #D9D9D9;
-}
-.gm-3 {
-  fill:#EEEEEE;
-}
-.gm-4 {
-  fill:#E0E0E0;
-}
-.gm-5 {
-  fill:#CA3737;
-}
-.gm-5 {
-  fill:#F5F5F5;
-}
-.gm-7 {
-  fill:#E84F4B;;
-}
-
 
 .logo-link {
   margin: 10px;
