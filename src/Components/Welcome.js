@@ -5,9 +5,8 @@ class Welcome extends Component {
     return (
       <div className="wrapper">
         <h2>Welcome</h2>
-        <p>I'm an aspiring web developer with a love for JavaScript and php and a relentless desire to learn more about the web and web technologies. I have a year of SQL experience and 10 months of JavaScript and php, as well as various frameworks/libraries like Vue, React, and Laravel. You can see more about my journey into development under the Developer tab.</p>
-        <p>This site is built using React and React Router, with an Express server for use on Heroku. The page also includes style breakpoints for iPad and iPhone.</p>
-        <p>My most recent forays have been into C# and Swift.</p>
+        <p>I'm an IT Support technician during the day and programming polyglot by night. My proficiencies include HTML, CSS, JavaScript, php, and C#, as well as frameworks such as React, Vue, Node, and Express for JavaScript, Laravel for php, and ASP.NET MVC for C#. I'm entirely self-edcated (with help from Treehouse and the Louisville Public Library), eager, and easily excitable. I enjoy working both with teams and independently.</p>
+        <p>My most recent forays have been into Python and Swift.</p>
       </div>
     );
   }

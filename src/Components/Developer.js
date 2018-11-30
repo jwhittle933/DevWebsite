@@ -37,10 +37,13 @@ class Developer extends Component {
             <strong>CSS</strong>: Vanilla CSS, Bootstrap, less, Sass
           </li>
           <li>
-            <strong>JavaScript</strong>: Capable in traditional, imperative programming with a familiarity of functional, recursive approaches. Proficiency with AJAX (xhr, fetch API, axios). High level proficiency with Vue.js and React, plus a familiarity with AngularJS, Node.js, Express, and jQuery.
+            <strong>JavaScript</strong>: Capable in traditional, imperative programming with a familiarity of functional, recursive approaches. Proficiency with AJAX (xhr, fetch API, axios). High level proficiency with Vue, React, Node, and Express, plus a familiarity with AngularJS and jQuery.
           </li>
           <li>
             <strong>PHP</strong>: Proficiency in vanilla php with a preference (and strong love) for Laravel. Familiarity with WordPress CMS.
+          </li>
+          <li>
+            <strong>C#</strong>: Intermediate knowledge of C# programming and knowledge of ASP.NET MVC.
           </li>
           <li>
             <strong>MySQL/SQLite</strong>: selects, joins, aggregate
@@ -54,7 +57,7 @@ class Developer extends Component {
         <h3>Minor Skills</h3>
         <ul>
           <li>
-            <strong>C#</strong>: Basic introduction to C# programming, including Object-Oriented C#
+            <strong>Python</strong>: Basic introduction to Python programming, including Object-Oriented Python
           </li>
           <li>
             <strong>Swift</strong>: Basic introduction to Swift programming
