@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { withRouter } from 'react-router'
 // import './App.css';
 
-//Components
 import Header from './Header'
 import Welcome from './Welcome'
 import About from './About'
@@ -40,7 +39,7 @@ export default class App extends Component {
               <Route path="/developer" render={ () => <Developer /> } />
               <Route path="/projects" render={ () => <Projects /> } />
               <Route path="/contact" render={ () => <Contact /> } />
-              <Route component={ NotFound } />
+              <Route path="*" component={ NotFound } />
             </Switch>
             <Footer />
           </div>
