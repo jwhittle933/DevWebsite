@@ -3,6 +3,7 @@ import facebook from '../img/flogo_RGB_HEX-144.svg'
 import twitter from '../img/Twitter_Logo_Blue.svg'
 import instagram from '../img/glyph-logo_May2016.png'
 import linkedin from '../img/In-2CRev-81px-TM.png'
+import gmail from  '../img/icons8-gmail.svg'
 
 
 class Contact extends Component {
@@ -11,7 +12,6 @@ class Contact extends Component {
       <div className="wrapper contact">
         <h2>Contact</h2>
           <p>Feel free to contact me through any of the following means.</p>
-          <p><strong>Email:</strong> jonathan.m.whittle@gmail.com</p>
         <div className="logo-flex">
           <a className="social-background" href="https://www.facebook.com/jonathan.whittle.39" target="_blank" rel="noopener noreferrer">
             <img src={ facebook } className="facebook logo-link" alt="logo"/>
@@ -24,6 +24,9 @@ class Contact extends Component {
           </a>
           <a className="social-background" href="https://www.instagram.com/jwhittl/" target="_blank" rel="noopener noreferrer">
             <img src={ instagram } className="instagram logo-link" alt="logo"/>
+          </a>
+          <a className="social-background" href="mailto:jonathan.m.whittle@gmail.com" rel="noopener noreferrer">
+            <img src={ gmail } className="instagram logo-link" alt="logo"/>
           </a>
         </div>
         <p><strong>Resume:</strong>

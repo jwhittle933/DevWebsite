@@ -10,7 +10,6 @@ class Header extends Component {
       currentPage: window.location.pathname
     }
   }
-  // Update makeActive, getting current path with window.location.pathname
   makeActive(click) {
     this.setState({currentPage: click})
   }
@@ -24,11 +23,16 @@ class Header extends Component {
     return (
       <div className="header-wrapper">
         <div className="item-large">Jonathan Whittle</div>
-        <Link className={ this.isActive('/') } to="/" onClick={this.makeActive.bind(this, '/')}>Welcome</Link>
-        <Link className={ this.isActive('/about')} to="/about" onClick={this.makeActive.bind(this, '/about')}>About</Link>
-        <Link className={ this.isActive('/developer') } to="/developer" onClick={this.makeActive.bind(this, '/developer')}>Developer</Link>
-        <Link className={ this.isActive('/projects') } to="/projects" onClick={this.makeActive.bind(this, '/projects')}>Projects</Link>
-        <Link className={ this.isActive('/contact') } to="/contact" onClick={this.makeActive.bind(this, '/contact')}>Contact</Link>
+        <Link className={ this.isActive('/') } to="/"
+              onClick={this.makeActive.bind(this, '/')}>Welcome</Link>
+        <Link className={ this.isActive('/about')} to="/about"
+              onClick={this.makeActive.bind(this, '/about')}>About</Link>
+        <Link className={ this.isActive('/developer') } to="/developer"
+              onClick={this.makeActive.bind(this, '/developer')}>Developer</Link>
+        <Link className={ this.isActive('/projects') } to="/projects"
+              onClick={this.makeActive.bind(this, '/projects')}>Projects</Link>
+        <Link className={ this.isActive('/contact') } to="/contact"
+              onClick={this.makeActive.bind(this, '/contact')}>Contact</Link>
       </div>
     );
   }
