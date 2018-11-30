@@ -22,6 +22,7 @@ const style7 = {
     fill: '#E84F4B'
 }
 const Gmail = () =>
+<a href="mailto:jonathan.m.whittle@gmail.com" rel="noopener noreferrer">
 <svg xmlns="http://www.w3.org/2000/svg" className="gmail logo-link"
 viewBox="0 0 48 48" version="1.1" width="48px" height="48px">
 <g id="surface1">
@@ -49,5 +50,5 @@ style={style7}
 d="M 43.246094 7.582031 L 24 21 L 4.753906 7.582031 C 3.179688 7.917969 2 9.296875 2 11 C 2 12.207031 3.519531 13.257813 3.519531 13.257813 L 24 27.757813 L 44.480469 13.257813 C 44.480469 13.257813 46 12.207031 46 11 C 46 9.296875 44.820313 7.917969 43.246094 7.582031 Z "/>
 </g>
 </svg>
-
+</a>
 export default Gmail
