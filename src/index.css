@@ -2,7 +2,6 @@ html {
   background-color: #F2E8C3;
   background-image: url(./img/coding_background.jpg);
   background-size: cover;
-  /* transform: scale(1.2); */
 }
 body {
   margin: 0;
@@ -174,9 +173,21 @@ img {
   border-radius: 4px;
   padding: 4px;
 }
+.fcls-1 {
+  fill: #4267b2;
+}
+.fcls-2 {
+  fill: #fff;
+}
 .twitter {
   height: 30px;
   width: 30px;
+}
+.tcls-1 {
+  fill: none;
+}
+.tcls-2 {
+  fill: #1da1f2;
 }
 .instagram {
   height: 20px;
@@ -189,18 +200,39 @@ img {
   border-radius: 3px;
   padding: 4px;
 }
+.gmail {
+  height: 20px;
+  width: 25px;
+  border-radius: 3px;
+  padding: 4px;
+}
+.gm-1 {
+  fill:#E0E0E0;
+}
+.gm-2 {
+  fill: #D9D9D9;
+}
+.gm-3 {
+  fill:#EEEEEE;
+}
+.gm-4 {
+  fill:#E0E0E0;
+}
+.gm-5 {
+  fill:#CA3737;
+}
+.gm-5 {
+  fill:#F5F5F5;
+}
+.gm-7 {
+  fill:#E84F4B;;
+}
+
+
 .logo-link {
   margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .figure-div {
   position: fixed;
   width: 30%;
@@ -237,10 +269,18 @@ img {
   height: 25vh;
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
-/*============
+/**
 * Breakpoints
-*/
+**/
 @media only screen and (max-width: 768px){
   html {
     background-color: #F2E8C3;
