@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
-
 class Header extends Component {
   constructor(){
     super()
@@ -17,9 +16,6 @@ class Header extends Component {
     return 'item ' + ((value === this.state.currentPage) ? 'active' : '')
   }
   render() {
-    const { location } = this.props
-    // eslint-disable-next-line
-    let path = location.pathname
     return (
       <div className="header-wrapper">
         <div className="item-large">Jonathan Whittle</div>

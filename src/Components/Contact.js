@@ -5,18 +5,20 @@ import Twitter from './SvgComponents/twitter'
 import Instagram from './SvgComponents/instagram'
 import Linkedin from './SvgComponents/linkedin'
 
+
 class Contact extends Component {
+
   render() {
     return (
       <div className="wrapper contact">
         <h2>Contact</h2>
           <p>Feel free to contact me through any of the following means.</p>
         <div className="logo-flex">
-            <Facebook />
-            <Twitter />
-            <Linkedin />
-            <Instagram />
-            <Gmail />
+            <Facebook className="logo-link" />
+            <Twitter className="logo-link" />
+            <Linkedin className="logo-link"/>
+            <Instagram className="logo-link"/>
+            <Gmail className="logo-link"/>
         </div>
         <p><strong>Resume:</strong>
           <a href="./files/JonathanWhittleResume.docx" download> .doc |</a>

@@ -26,7 +26,7 @@ export default class App extends Component {
 
   render() {
     if (this.state.hasError){
-      return <div id="error"><h1>Oh no! Something went wrong.</h1></div>
+      return <div className="error"><h1>Oh no! Something went wrong.</h1></div>
     } else {
       return (
       <div className="App">

@@ -23,11 +23,10 @@ const style7 = {
 }
 const Gmail = () =>
 <a href="mailto:jonathan.m.whittle@gmail.com" rel="noopener noreferrer">
-<svg xmlns="http://www.w3.org/2000/svg" className="gmail logo-link"
+<svg xmlns="http://www.w3.org/2000/svg" className="gmail"
 viewBox="0 0 48 48" version="1.1" width="48px" height="48px">
 <g id="surface1">
 <path
-// className="gm-1"
 style={style1}
 d="M 5.5 40.5 L 42.5 40.5 C 44.433594 40.5 46 38.933594 46 37 L 46 11 C 46 9.066406 44.433594 7.5 42.5 7.5 L 5.5 7.5 C 3.566406 7.5 2 9.066406 2 11 L 2 37 C 2 38.933594 3.566406 40.5 5.5 40.5 Z "/>
 <path className="gm-2"
