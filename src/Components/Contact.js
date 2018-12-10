@@ -7,7 +7,6 @@ import Linkedin from './SvgComponents/linkedin'
 
 
 class Contact extends Component {
-
   render() {
     return (
       <div className="wrapper contact">
