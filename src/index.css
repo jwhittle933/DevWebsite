@@ -148,7 +148,7 @@ img {
   box-shadow: -4px 4px 20px 1px lightgrey;
   text-decoration: none;
   color: inherit;
-  animation: bounce .3s;
+  /*animation: bounce .3s;*/
 }
 .tile-splash {
   position: absolute;
