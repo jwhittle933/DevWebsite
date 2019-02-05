@@ -25,6 +25,8 @@ h2 {
   font-family: 'Calibri light';
 }
 h3 {
+  font-size: 1.3em;
+  font-style: normal;
   font-family: 'Calibri light';
 }
 p {
@@ -124,9 +126,9 @@ img {
   position: relative;
   flex-grow: 1;
   margin: 2vw 2vh;
-  width: 300px;
-  max-width: 300px;
-  height: 300px;
+  width: 470px;
+  max-width: 470px;
+  height: 225px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: -4px 4px 20px 1px lightgrey;
@@ -136,8 +138,8 @@ img {
 .tile-splash {
   position: absolute;
   width: 100%;
-  height: 225px;
-  bottom: 40px;
+  height: 325px;
+  top: 0;
   left: 0;
 }
 .tile-bottom{
@@ -146,9 +148,11 @@ img {
   padding-left: 1vw;
   padding-top: 1vh; 
   left: 0;
-  bottom: 2vh;
+  bottom: 0vh;
   width: 100%;
   height: 40px;
+  background-color: rgba(10, 10, 10, 0.5); 
+
 }
 .projects a {
   color: blue;

@@ -1,6 +1,8 @@
 import React from 'react';
 import Transliterator from '../img/TransliteratorUI.png'
 import TechApp from '../img/TechAppUI.gif'
+import ItsTheWhittleThings from '../img/ItsTheWhittleThingsUI.gif'
+
 
 const projects = [
   {
@@ -16,7 +18,7 @@ const projects = [
   {
     title: "Its The Whittle Things",
     url: "https://github.com/jwhittle933/itsthewhittlethings",
-    gif: ""
+    gif: ItsTheWhittleThings
   },
   {
     title: "Catalog",
@@ -42,7 +44,7 @@ const Projects = () =>
               <img src={project.gif} alt="Example UI"></img>
             </div>
             <div className="tile-bottom">
-              <a href={project.url} rel="noopener noreferrer" target="_blank"><p>{project.title}</p></a>
+              <a href={project.url} rel="noopener noreferrer" target="_blank"><p className="main-font">{project.title}</p></a>
             </div>
         </div>
         )
