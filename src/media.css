@@ -4,8 +4,8 @@
     flex-grow: 1;
     margin: 2vw 2vh;
     width: 350px;
-    max-width: 500px;
-    height: 300px;
+    max-width: 350px;
+    height: 225px;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: -4px 4px 20px 1px lightgrey;
@@ -37,9 +37,9 @@
     position: relative;
     flex-grow: 1;
     margin: 2vw 2vh;
-    width: 350px;
-    max-width: 500px;
-    height: 300px;
+    width: 425px;
+    max-width: 425px;
+    height: 250px;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: -4px 4px 20px 1px lightgrey;
