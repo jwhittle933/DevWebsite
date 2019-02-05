@@ -38,14 +38,16 @@ const Projects = () =>
     <p>All of my projects can be viewed on <a href="https://github.com/jwhittle933?tab=repositories" rel="noopener noreferrer" target="_blank">GitHub</a></p>
     <div className="projects-flex">
     {
-      projects.map( project => (
-          <div className="tile">
+      projects.map( (project, index) => (
+          <div className="tile" key={index}>
             <div className="tile-splash">
               <img src={project.gif} alt="Example UI"></img>
             </div>
-            <div className="tile-bottom">
-              <a href={project.url} rel="noopener noreferrer" target="_blank"><p className="main-font">{project.title}</p></a>
-            </div>
+            <a href={project.url} rel="noopener noreferrer" target="_blank">
+              <div className="tile-bottom">
+                <p className="main-font font-lg" >{project.title}</p>
+              </div>
+            </a>
         </div>
         )
       )
