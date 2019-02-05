@@ -1,3 +1,37 @@
+@media only screen and (min-width: 1320px){
+  .tile {
+    position: relative;
+    flex-grow: 1;
+    margin: 2vw 2vh;
+    width: 350px;
+    max-width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: -4px 4px 20px 1px lightgrey;
+    text-decoration: none;
+    color: inherit;
+  }
+  .tile-splash {
+    position: absolute;
+    width: 100%;
+    height: 325px;
+    top: 0;
+    left: 0;
+  }
+  .tile-bottom {
+    position: absolute;
+    display: flex;
+    padding-left: 1vw;
+    padding-top: 1vh; 
+    left: 0;
+    bottom: 0vh;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(10, 10, 10, 0.5); 
+  }
+}
+
 @media only screen and (min-width: 1500px){
   .tile {
     position: relative;
@@ -278,5 +312,40 @@
       margin-right: auto;
       padding: 15px;
       z-index: 2;
+    }
+    .tile {
+      position: relative;
+      flex-grow: 1;
+      margin: 2vw 2vh;
+      width: 400px;
+      max-width: 500px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: -4px 4px 20px 1px lightgrey;
+      text-decoration: none;
+      color: inherit;
+    }
+    .tile-splash {
+      position: absolute;
+      width: 100%;
+      height: 325px;
+      top: 0;
+      left: 0;
+    }
+    .tile-bottom {
+      position: absolute;
+      display: flex;
+      padding-left: 1vw;
+      padding-top: 1vh; 
+      left: 0;
+      bottom: 0vh;
+      width: 100%;
+      height: 40px;
+      background-color: rgba(10, 10, 10, 0.5); 
+    }
+    .projects a:hover p {
+      font-size: 1.4em;
+      transition: all 100ms cubic-bezier(.83,-0.03,.56,.59);
     }
   }

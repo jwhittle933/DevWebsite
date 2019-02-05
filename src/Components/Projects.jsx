@@ -35,7 +35,7 @@ const projects = [
 
 const Projects = () => 
   <div className="wrapper projects">
-    <h2>Notable Projects</h2>
+    <h2>Example Projects</h2>
     <p>Most of these projects are in progress and can be viewed on <a href="https://github.com/jwhittle933?tab=repositories" rel="noopener noreferrer" target="_blank">GitHub</a></p>
     <div className="projects-flex">
     {
