@@ -2,7 +2,8 @@ import React from 'react';
 import Transliterator from '../img/TransliteratorUI.png'
 import TechApp from '../img/TechAppUI.gif'
 import ItsTheWhittleThings from '../img/ItsTheWhittleThingsUI.gif'
-
+import BookCatalog from '../img/BookCatalogUI.gif'
+import JJJ from '../img/JJJUI.gif'
 
 const projects = [
   {
@@ -23,19 +24,19 @@ const projects = [
   {
     title: "Catalog",
     url: "https://github.com/jwhittle933/book_catalog",
-    gif: ""
+    gif: BookCatalog
   },
   {
-    title: "Golang BMR Calculator",
-    url: "https://github.com/jwhittle933/bmrCalculator",
-    gif: ""
+    title: "Jonathan's Jump'n Jacks",
+    url: "https://github.com/jwhittle933/JonathansJumpnJacks",
+    gif: JJJ
   }
 ]
 
 const Projects = () => 
   <div className="wrapper projects">
     <h2>Notable Projects</h2>
-    <p>All of my projects can be viewed on <a href="https://github.com/jwhittle933?tab=repositories" rel="noopener noreferrer" target="_blank">GitHub</a></p>
+    <p>Most of these projects are in progress and can be viewed on <a href="https://github.com/jwhittle933?tab=repositories" rel="noopener noreferrer" target="_blank">GitHub</a></p>
     <div className="projects-flex">
     {
       projects.map( (project, index) => (

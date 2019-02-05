@@ -133,14 +133,16 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row; 
+  /*margin: 0 auto;*/
+  margin-left: 2vw;
 }
 .tile {
   position: relative;
   flex-grow: 1;
   margin: 2vw 2vh;
-  width: 470px;
-  max-width: 470px;
-  height: 225px;
+  width: 350px;
+  max-width: 350px;
+  height: 200px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: -4px 4px 20px 1px lightgrey;
@@ -164,19 +166,20 @@ img {
   width: 100%;
   height: 40px;
   background-color: rgba(10, 10, 10, 0.5); 
-
 }
 .projects a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .projects p {
   margin: 0;
 }
+.projects p a {
+  color: blue;
+}
 .projects a:hover p {
-  font-size: 1.4em;
+  font-size: 1.5em;
   transition: all 100ms cubic-bezier(.83,-0.03,.56,.59);
-
 }
 .about a {
   color: blue;
