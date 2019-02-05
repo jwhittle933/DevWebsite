@@ -148,6 +148,7 @@ img {
   box-shadow: -4px 4px 20px 1px lightgrey;
   text-decoration: none;
   color: inherit;
+  animation: bounce .3s;
 }
 .tile-splash {
   position: absolute;
@@ -202,7 +203,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.footer{
+.footer {
   display: flex;
   align-items: center;
   background-color: black;
@@ -215,7 +216,6 @@ img {
   padding: 5;
 }
 .footer p {
-  /* font-size: 1.2em; */
   width: auto;
   padding: 1px;
   margin: 5px;
@@ -228,8 +228,8 @@ img {
 }
 .logo-flex {
   display: flex;
-  justify-content: left;
-  margin-bottom: 5vh;
+  justify-content: space-around;
+  margin-bottom: 15vh;
   margin-top: 5vh;
 }
 .logo-flex a {
@@ -241,46 +241,26 @@ img {
   width: 5vw;
   border-radius: 4px;
   padding: 4px;
-}
-.facebook #f1, #f2{
-  transition: all 200ms cubic-bezier(.83,-0.03,.56,.59);
+  animation: bounce .3s; 
 }
 .twitter {
   height: 5vh;
   width: 5vw;
   padding: 4px;
-}
-.tcls-1 {
-  fill: none;
-}
-.tcls-2 {
-  fill: #1da1f2;
+  animation: bounce .3s; 
 }
 .instagram {
   height: 5vh;
   width: 5vw;
   padding: 4px;
-}
-.instafill{
-  fill: #59402c;
+  animation: bounce .3s; 
 }
 .linkedin {
   height: 5vh;
   width: 5vw;
   border-radius: 3px;
   padding: 4px;
-}
-.linkfill{
-  fill: #3860e8;
-}
-.gmail {
-  height: 5vh;
-  width: 5vw;
-  border-radius: 3px;
-  padding: 4px;
-}
-.logo-link {
-  margin: 10px;
+  animation: bounce .3s; 
 }
 .figure-div {
   position: fixed;
@@ -324,5 +304,17 @@ img {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(15%);
+  }
+  50%{
+    transform: translateY(-10%);
+  }
+  100%{
+    transform: translateY(0);
   }
 }

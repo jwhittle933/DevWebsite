@@ -6,7 +6,7 @@ class NotFound extends Component {
     return (
       <div className="wrapper not-found">
         <h1>Whoops! Can't find that one...</h1>
-        <p>Looks like you've navigated to a page that I don't know. Are you sure the URL is correct?</p>
+        <p>The navigation buttons up top should help you find your way.</p>
         <div className="computer-div">
           <Computer />
         </div>
