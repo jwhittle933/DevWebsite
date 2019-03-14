@@ -2,7 +2,10 @@
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2017,
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "env": {
     "browser": true,
@@ -10,6 +13,7 @@
     "es6": true
   },
   "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "plugins": ["react"],
   "rules": {
     "arrow-spacing": 2,
     "semi": [2, "never"],
@@ -17,6 +21,8 @@
     "no-unused-vars": 1,
     "no-undef": 1,
     "no-console": 1,
-    "eol-last": 1
+    "eol-last": 1,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
   }
 }

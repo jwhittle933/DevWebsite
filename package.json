@@ -16,10 +16,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "node node_modules/eslint/bin/eslint.js 'src/**/*.js'",
+    "lint": "node node_modules/eslint/bin/eslint.js 'src/**/*.jsx'",
     "lint-fix": "eslint --fix .",
-    "pretty": "prettier --list-different './src/**/*.js'",
-    "pretty-fix": "prettier --write './src/**/*.js'",
+    "pretty": "prettier --list-different './src/**/*.jsx'",
+    "pretty-fix": "prettier --write './src/**/*.jsx'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
