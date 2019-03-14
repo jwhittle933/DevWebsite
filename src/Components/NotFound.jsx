@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-// import Computer from './SvgComponents/computer'
+import React, { Component } from 'react'
 
 class NotFound extends Component {
   render() {
@@ -9,8 +8,8 @@ class NotFound extends Component {
         <p>The navigation buttons up top should help you find your way.</p>
         <div className="computer-div" />
       </div>
-    );
+    )
   }
 }
 
-export default NotFound;
+export default NotFound
