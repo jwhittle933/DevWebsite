@@ -1,5 +1,5 @@
-import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin } from 'grommet-icons';
+import React from 'react'
+import { Facebook, Twitter, Instagram, Linkedin } from 'grommet-icons'
 
 const Contact = () => (
   <div className="wrapper contact">
@@ -63,6 +63,6 @@ const Contact = () => (
       </a>
     </p>
   </div>
-);
+)
 
-export default Contact;
+export default Contact
