@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
-import Header from './Header.jsx'
-import Welcome from './Welcome.jsx'
-import About from './About.jsx'
-import Developer from './Developer.jsx'
-import Projects from './Projects.jsx'
-import Contact from './Contact.jsx'
-import Footer from './Footer.jsx'
-import NotFound from './NotFound.jsx'
+import Header from './Header'
+import Welcome from './Welcome'
+import About from './About'
+import Developer from './Developer'
+import Projects from './Projects'
+import Contact from './Contact'
+import Footer from './Footer'
+import NotFound from './NotFound'
 
 export default class App extends Component {
   constructor() {
