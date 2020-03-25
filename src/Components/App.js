@@ -38,8 +38,8 @@ export default class App extends Component {
               <Switch>
                 <Route exact path="/" render={() => <Welcome />} />
                 <Route path="/about" render={() => <About />} />
-                <Route path="/developer" render={() => <Developer />} />
-                <Route path="/projects" render={() => <Projects />} />
+                <Route path="/skills" render={() => <Developer />} />
+                <Route path="/work" render={() => <Projects />} />
                 <Route path="/contact" render={() => <Contact />} />
                 <Route path="*" component={NotFound} />
               </Switch>
