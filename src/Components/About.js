@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import Jon from '../img/front-wedding.jpg'
+import React from 'react'
+import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
 const About = () => {
   return (
@@ -7,77 +7,67 @@ const About = () => {
       <div className="about-content">
         <h2>About Me</h2>
         <p>
-          I grew up in a small South Carolina town (Sumter), in a home that held
-          to traditional Christian values. In high school, I excelled at STEM
-          subjects and participated in a collegiate Engineering program.{' '}
-        </p>
-        <p>
-          After high school, I followed two of my closest friends to Clemson
-          University, the rival school to the school I was raised to support,
-          The University of South Carolina. I began studying Civil Engineering
-          but soon discovered that I wasn't that interested in designing parking
-          lots and watersheds, so I switched to Philosophy.{' '}
-        </p>
-        <p>
-          After college I spent two years as a guitarist and sound engineer for
-          a church in Clemson. It was there that I met my wife, Emily. We
-          eventually married and moved to Louisville, KY for Seminary at The
-          Southern Baptist Theological Seminary. I graduated with my M.Div in
-          December 2018 and began a Th.M in Old Testament/Septuagint in January
-          under Dr. Peter Gentry, one of the foremost Septuatint scholars in
-          North America.
-        </p>
-        <p>
-          I previously worked in IT as support staff for classroom related
-          technology at SBTS. My main responsibilities included servicing A/V
-          technologies, Apple/Windows troubleshooting, servicing hardware
-          (internal drives, GPU, etc), Extron/Crestron room controllers, audio
-          recording and editing with Logic and ProTools, some network tinkering,
-          occasionally moving heavy tables, and reconnecting built-in power
-          supplies that should have never been disconnected. Through this job I
-          was exposed to programming, specifically but not limited to web-based
-          technologies.
-        </p>
-
-        <p>
-          After 7 months of <i>very</i> focused study (and few months of
-          informal Google searching and tinkering), I landed a job at{' '}
+          I'm currently employed as a software engineer at{' '}
           <a
-            href="https://www.eltoro.com/"
+            className="link"
+            href="https://eltoro.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            El Toro
+            eltoro.com
           </a>{' '}
-          as a React/Elixir developer.
+          in Louisville, KY. I'm the task lead for what has recently come to be
+          called ui-services, a small subset of the UI team that handles
+          application deploy and serving, backend integrations, CI/CD, and
+          generally all data flow in and out of our web applications. On most
+          days, I work on deployment and data solutions with Go, but
+          occasionally write JavaScript, Elixir, and Python as well. Outside of
+          work Ive written in Rust, C, Lisp (Racket, Scheme, Emacs), C#, and
+          PHP.
         </p>
-
         <p>
-          Of special interest to me are language and linguistics, particularly
-          as they are applied to textual trasmission, textual criticism, and
-          exegesis. I have been studying Hebrew and Greek for many years now,
-          and over that period have also acquired Aramaic, Syriac, Ugaritic, a
-          little Akkadian, Latin, French, and German. In fact, it is my love for
-          language that prompted my interest and early success with programming
-          languages. My hope is to one day integrate the two by teaching Ancient
-          Near Eastern literature and building websites that support and
-          disseminate information and material concerning the field (e.g.{' '}
+          In December 2018 I graduated from The Southern Baptist Theological
+          Seminary with a Master of Divinity, focusing on Ancient Near Eastern
+          Languages and Linguistics. In the course of my study, I learned
+          Classical Hebrew, both Classical and Hellenistic Greek, Aramaic,
+          Syriac, Ugaritic, a bit of Akkadian, Latin, and French. I also revived
+          my German. In January of 2019 I started the doctoral process by
+          entering the Th.M (Master of Theology) under Dr. Peter Gentry. My Th.M
+          thesis is a translation study of Old Greek Proverbs. During my studies
+          I was employed by the seminary as a help desk technician, servicing
+          computers and handling classroom-related tech needs.
+        </p>
+        <p>
+          In December 2020, I took over as the principal engineer at{' '}
           <a
-            href="http://ccat.sas.upenn.edu/ioscs//"
+            className="link"
+            href="https://hexapla.org"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            IOSCS
-          </a>
-          , created by Septuagint scholar Jay Treat, and{' '}
-          <a
-            href="http://hexapla.org/"
-            target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer noopener"
           >
             The Hexapla Institute
           </a>
-          , made by doctoral candidate in Septuagint, Russ Hawkins).
+          , an international collaboration between The Southern Baptist
+          Theological Seminary (Dr. Peter Gentry), Oxford Univeristy (Dr. Alison
+          Salvesen), and Vrije Univeristeit Amsterdam (Dr. Bas ter Haar Romeny).
+          The purpose of the institute is to update Frederick Field's 19th
+          century critical edition of Origen's{' '}
+          <a
+            className="link"
+            href="https://en.wikipedia.org/wiki/Hexapla"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Hexaplaric Fragements
+          </a>{' '}
+          based on new manuscript evidence and techniques. Along with Jeremy
+          Osborn, we are giving a face-lift to the public site and creating a
+          new portal for the contributors to study manuscripts, record data, and
+          ultimately produce a critical edition in print of their assigned book.
+        </p>
+        <p>
+          My wife (Emily) and I are originally from South Carolina, and one day
+          we hope to move back. Our son, Judson, was born in January 2019.
         </p>
       </div>
     </div>

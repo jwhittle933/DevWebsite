@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { withRouter } from 'react-router'
 
-import Header from './Header'
+import Menu from './Menu'
 import Welcome from './Welcome'
 import About from './About'
 import Developer from './Developer'
@@ -35,7 +34,7 @@ export default class App extends Component {
         <div className="App">
           <Router>
             <div className="main-view">
-              <Header location={withRouter} />
+              <Menu />
               <Switch>
                 <Route exact path="/" render={() => <Welcome />} />
                 <Route path="/about" render={() => <About />} />
@@ -44,7 +43,6 @@ export default class App extends Component {
                 <Route path="/contact" render={() => <Contact />} />
                 <Route path="*" component={NotFound} />
               </Switch>
-              <Footer />
             </div>
           </Router>
         </div>
