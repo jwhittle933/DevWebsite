@@ -29,7 +29,12 @@ const About = () => {
           I'm a proud graduate of Clemson University (2013). Initially I entered
           the engineering program, having done engineering prep for two years in
           high-school. After starting down the road toward civil engineering, I
-          soon realized that this path wasn't for me.
+          soon realized that this path wasn't for me. So I swapped to Philosophy
+          with a minor in guitar performance. While at Clemson, I was an active
+          participant in FCA (Fellowship of Christian Athletes), and played
+          guitar for the chapter's in-house band for two years. I was also a
+          member of Crosspoint Church Clemson, where I later worked for 2 years
+          prior to moving to Kentucky.
         </p>
         <p>
           In December 2018 I graduated from The Southern Baptist Theological
@@ -37,11 +42,13 @@ const About = () => {
           Languages and Linguistics. In the course of my study, I learned
           Classical Hebrew, both Classical and Hellenistic Greek, Aramaic,
           Syriac, Ugaritic, a bit of Akkadian, Latin, and French. I also revived
-          my German. In January of 2019 I started the doctoral process by
-          entering the Th.M (Master of Theology) under Dr. Peter Gentry. My Th.M
-          thesis is a translation study of Old Greek Proverbs. During my studies
-          I was employed by the seminary as a help desk technician, servicing
-          computers and handling classroom-related tech needs.
+          my German. The original intention was to enter the pastorate, but my
+          course has changed slightly since then. In January of 2019 I started
+          the doctoral process by entering the Th.M (Master of Theology) under
+          Dr. Peter Gentry. My Th.M thesis is a translation study of Old Greek
+          Proverbs. During my studies I was employed by the seminary as a help
+          desk technician, servicing computers and handling classroom-related
+          tech needs.
         </p>
         <p>
           In December 2020, I took over as the principal engineer at{' '}
@@ -83,7 +90,11 @@ const About = () => {
         </p>
         <p>
           My wife (Emily) and I are originally from South Carolina, and one day
-          we hope to move back. Our son, Judson, was born in January 2019.
+          we hope to move back. Our son, Judson, was born in January 2019. He's
+          a living, breathing, indoor tornado, and we love every bit him. We are
+          members at Clifton Baptist Church in Louisville, Kentucky, where I
+          also serve as Deacon of Sound (or, as I've been called, the Earl of
+          Audio).
         </p>
       </div>
     </div>

@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Menu from './Menu'
 import Welcome from './Welcome'
 import About from './About'
-import Developer from './Developer'
+import Skills from './Skills'
 import Projects from './Projects'
 import Contact from './Contact'
 import Footer from './Footer'
@@ -38,7 +38,7 @@ export default class App extends Component {
               <Switch>
                 <Route exact path="/" render={() => <Welcome />} />
                 <Route path="/about" render={() => <About />} />
-                <Route path="/skills" render={() => <Developer />} />
+                <Route path="/skills" render={() => <Skills />} />
                 <Route path="/work" render={() => <Projects />} />
                 <Route path="/contact" render={() => <Contact />} />
                 <Route path="*" component={NotFound} />
