@@ -4,6 +4,7 @@ const Developer = () => {
   const scrollToSkills = () =>
     document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })
 
+  // TODO: Include a "uses" section that talks about editor, keyboard, etc.
   return (
     <div className="wrapper developer">
       <h2>Developer</h2>

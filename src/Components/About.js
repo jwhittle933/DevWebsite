@@ -26,6 +26,12 @@ const About = () => {
           PHP.
         </p>
         <p>
+          I'm a proud graduate of Clemson University (2013). Initially I entered
+          the engineering program, having done engineering prep for two years in
+          high-school. After starting down the road toward civil engineering, I
+          soon realized that this path wasn't for me.
+        </p>
+        <p>
           In December 2018 I graduated from The Southern Baptist Theological
           Seminary with a Master of Divinity, focusing on Ancient Near Eastern
           Languages and Linguistics. In the course of my study, I learned
@@ -64,6 +70,16 @@ const About = () => {
           Osborn, we are giving a face-lift to the public site and creating a
           new portal for the contributors to study manuscripts, record data, and
           ultimately produce a critical edition in print of their assigned book.
+          A prototype can be found{' '}
+          <a
+            className="link"
+            href="https://hexapla-web.herokuapp.com/#/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            here
+          </a>
+          .
         </p>
         <p>
           My wife (Emily) and I are originally from South Carolina, and one day
