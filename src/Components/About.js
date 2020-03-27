@@ -5,7 +5,11 @@ const About = () => {
   return (
     <div className="wrapper about">
       <div className="about-content">
-        <h2>About Me</h2>
+        {'About Me'.split('').map(l => (
+          <span className="view-header" data-letter={l}>
+            {l}
+          </span>
+        ))}
         <p>
           I'm currently employed as a software engineer at{' '}
           <a

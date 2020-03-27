@@ -35,7 +35,11 @@ const projects = [
 
 const Projects = () => (
   <div className="wrapper projects">
-    <h2>Example Projects</h2>
+    {'Work'.split('').map(l => (
+      <span className="view-header" data-letter={l}>
+        {l}
+      </span>
+    ))}
     <p>
       Most of these projects are in progress and can be viewed on{' '}
       <a

@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+*, *:before, *:after{
+    box-sizing:border-box;
+}
 html {
     background-color: #172226;
   background-size: cover;
@@ -55,11 +59,56 @@ img {
 .font-sm {
   font-size: 0.75em;
 }
+.heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.view-header {
+    font-family: 'Lato';
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 3em;
+    margin: 0.1em;
+    position: relative;
+    color: #52718C;
+    transform-style: preserve-3d;
+    perspective: 400;
+    z-index: 1;
+}
+.view-header:before, .view-header:after {
+    position: absolute;
+    content: attr(data-letter);
+    transform-origin: top left;
+    top: 0;
+    left: 0;
+}
+.view-header, .view-header:before, .view-header:after {
+    transition: all 0.1s ease-in-out;
+}
+.view-header:before {
+    color: #F3EEDA;
+    text-shadow: -1px 0px 1px rgba(255,255,255,.8), 1px 0px 1px rgba(0,0,0,.8);
+    z-index: 3;
+    transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+}
+.view-header:after{
+    color: rgba(0,0,0,.11);
+    z-index:2;
+    transform: scale(1.08,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,1deg);
+}
+.view-header:hover:before{
+    color: #F3EEDA;
+    transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);}
+.view-header:hover:after{
+    transform: scale(1.08,1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg,22deg);
+}
 .click {
     cursor: pointer;
 }
 .main-view {
-  height: 80vh;
+  height: 90vh;
   width: 90%;
   margin-left: 6%;
   margin-top: 50px;
@@ -139,6 +188,7 @@ img {
   margin-top: 1%;
   padding-top: 30px;
   padding-left: 2.5%;
+  position: relative;
 }
 
 .welcome-image {
@@ -171,6 +221,7 @@ img {
 
 .feature-text-header {
     width: auto;
+    position: relative;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -316,7 +367,11 @@ img {
   color: blue;
   text-decoration: none;
 }
-
+.skills {
+    overflow: auto;
+    padding: 1em;
+    height: 100%;
+}
 .skills::-webkit-scrollbar {
     width: 6px;
 }
@@ -330,9 +385,9 @@ img {
 }
 
 .skill {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 200px);
     margin-bottom: 2em;
 }
 .skill .icon {
@@ -340,18 +395,26 @@ img {
     justify-content: center;
     align-items: center;
     flex-shrink: 1;
-    min-width: 8%;
+    width: 10em;
+    height: 10em;
+    border: 1px solid red;
 }
 .skill .text {
     padding: 1em;
-    border: 2px solid red;
     flex-grow: 2;
+    margin: 0;
+    border: 1px solid red;
 }
 .front-end {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     min-width: 8%;
+}
+.cloud {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 8%;
 }
 .skills-history {
     display: flex;

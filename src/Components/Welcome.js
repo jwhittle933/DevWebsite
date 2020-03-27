@@ -176,19 +176,19 @@ const Welcome = () => {
                 />
               ))}
             </div>
-            <div className="welcome-play-pause">
-              <i
-                className="fas fa-play fa-sm click"
-                style={{ color: play ? '#17E64E' : '' }}
-                onClick={() => setPlay(true)}
-              ></i>
-              <i
-                className="fas fa-pause fa-sm click"
-                style={{ color: play ? '' : '#F28907' }}
-                onClick={() => setPlay(false)}
-              ></i>
-              <div className="loader"></div>
-            </div>
+            {/* <div className="welcome-play-pause"> */}
+            {/*   <i */}
+            {/*     className="fas fa-play fa-sm click" */}
+            {/*     style={{ color: play ? '#17E64E' : '' }} */}
+            {/*     onClick={() => setPlay(true)} */}
+            {/*   ></i> */}
+            {/*   <i */}
+            {/*     className="fas fa-pause fa-sm click" */}
+            {/*     style={{ color: play ? '' : '#F28907' }} */}
+            {/*     onClick={() => setPlay(false)} */}
+            {/*   ></i> */}
+            {/*   <div className="loader"></div> */}
+            {/* </div> */}
             <TextRotation featureIndex={getIndex(currentText)} play={play} />
           </div>
         </div>

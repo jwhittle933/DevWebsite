@@ -3,7 +3,11 @@ import { Facebook, Twitter, Instagram, Linkedin } from 'grommet-icons'
 
 const Contact = () => (
   <div className="wrapper contact">
-    <h2>Contact</h2>
+    {'Contact'.split('').map(l => (
+      <span className="view-header" data-letter={l}>
+        {l}
+      </span>
+    ))}
     <p>
       I'm currently open to remote, contract work in any of the languages and
       environments specified (so long as you are not in competition with El
