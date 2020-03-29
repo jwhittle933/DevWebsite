@@ -77,12 +77,53 @@ const HeaderFunc = () => {
       </div>
       <div className="menu-social">
         <a
-          className="logo-link"
+          href="https://www.facebook.com/jonathan.whittle.39"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-facebook logo-link facebook"></i>
+        </a>
+        <a
+          href="https://twitter.com/JonathanWhittle"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-twitter logo-link twitter"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/jwhittl/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            className="fab fa-instagram logo-link instagram"
+            style={{
+              background:
+                '-webkit-linear-gradient(rgb(76,93,204), rgb(183,58,162), rgb(253,82,66), rgb(241,78,85))',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+            }}
+          ></i>
+        </a>
+        <a
+          href="http://www.linkedin.com/in/jonathan-whittle-161590169"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            className="fab fa-linkedin logo-link linkedin"
+            style={{
+              color: 'rgb(1,119,181)',
+            }}
+          ></i>
+        </a>
+        <a
+          className="logo-link github"
           href="https://github.com/jwhittle933"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Github size="medium" color="rgb(255,255,255)" />
+          <i className="fab fa-github logo-link github"></i>
         </a>
       </div>
     </div>

@@ -6,6 +6,7 @@ import { ReactComponent as Clang } from './misc/C-01.svg'
 import { ReactComponent as Sass } from './misc/sass-1.svg'
 import { ReactComponent as Csharp } from './misc/C-Sharp-01.svg'
 import { ReactComponent as Erlang } from './misc/Erlang-01.svg'
+import { ReactComponent as Python } from './misc/Python.svg'
 import { ReactComponent as Bash } from './misc/Gnu-bash-logo.svg'
 import { ReactComponent as IBM } from './misc/IBM-01.svg'
 import { ReactComponent as Heroku } from './misc/heroku-logo-stroke-purple.svg'
@@ -58,10 +59,10 @@ const Skills = () => {
         </span>
       ))}
       <div className="skill">
-        <Golang size="xlarge" color="plain" className="icon" />
-        <Js size="large" color="plain" className="icon" key="js" />
-        <Node size="large" color="plain" className="icon" key="node" />
-        <Reactjs size="large" color="plain" className="icon" key="react" />
+        <Golang size="xlarge" color="plain" className="click icon" />
+        <Js size="xlarge" color="plain" className="click icon" key="js" />
+        <Node size="xlarge" color="plain" className="icon" key="node" />
+        <Reactjs size="xlarge" color="plain" className="icon" key="react" />
         <div
           style={{
             display: 'flex',
@@ -102,15 +103,7 @@ const Skills = () => {
           className="icon fab fa-phoenix-framework"
         />
         <Erlang className="icon" />
-        <i
-          style={{
-            width: '1em',
-            height: '1em',
-            fontSize: '10em',
-            color: 'rgb(36,78,113)',
-          }}
-          className="icon fab fa-python"
-        />
+        <Python className="icon" />
         <Rust height="6em" width="6em" color="plain" className="icon" />
         <Clang className="icon" />
         <Csharp className="icon" />
