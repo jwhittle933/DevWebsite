@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Golang, Node, Js, Reactjs } from 'grommet-icons'
+import { ReactComponent as Vue } from './misc/Vuejs.svg'
 import { ReactComponent as Rust } from './misc/rust-lang-icon.svg'
 import { ReactComponent as Clang } from './misc/C-01.svg'
 import { ReactComponent as Sass } from './misc/sass-1.svg'
@@ -13,7 +14,8 @@ import { ReactComponent as Travis } from './misc/Travis-CI-01.svg'
 import { ReactComponent as Jest } from './misc/Jest-01.svg'
 import { ReactComponent as Mongo } from './misc/MongoDB-01.svg'
 import { ReactComponent as Postgres } from './misc/PostgreSQL-01.svg'
-import { ReactComponent as Couch } from './misc/CouchDB-01.svg'
+import { ReactComponent as MySQL } from './misc/MySQL_1012821.svg'
+import { ReactComponent as Couch } from './misc/apache_couchdb-icon.svg'
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
 const Grid = ({ classname, children }) => {
@@ -49,7 +51,7 @@ const Skills = () => {
 
   // TODO: Include a "uses" section that talks about editor, keyboard, etc.
   return (
-    <div className="wrapper">
+    <div className="wrapper skills">
       {'Skills'.split('').map((l, i) => (
         <span className="view-header" data-letter={l} key={i}>
           {l}
@@ -60,26 +62,35 @@ const Skills = () => {
         <Js size="large" color="plain" className="icon" key="js" />
         <Node size="large" color="plain" className="icon" key="node" />
         <Reactjs size="large" color="plain" className="icon" key="react" />
-        <i
-          style={{
-            width: '1em',
-            height: '1em',
-            fontSize: '10em',
-            color: 'rgb(52,73,94)',
-          }}
-          className="icon fab fa-vuejs"
-          key="vue"
-        />
         <div
           style={{
             display: 'flex',
             overflow: 'hidden',
             maxWidth: '10em',
             justifyContent: 'center',
-            border: '2px solid red',
+          }}
+        >
+          <Vue />
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            overflow: 'hidden',
+            maxWidth: '10em',
+            justifyContent: 'center',
           }}
         >
           <Sass />
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            overflow: 'hidden',
+            maxWidth: '10em',
+            justifyContent: 'center',
+          }}
+        >
+          <Jest />
         </div>
         <i
           style={{
@@ -133,7 +144,6 @@ const Skills = () => {
         />
         <div
           style={{
-            border: '2px solid red',
             overflow: 'hidden',
             maxWidth: '10em',
             display: 'flex',
@@ -144,7 +154,6 @@ const Skills = () => {
         </div>
         <div
           style={{
-            border: '2px solid red',
             overflow: 'hidden',
             maxWidth: '10em',
             display: 'flex',
@@ -159,7 +168,46 @@ const Skills = () => {
             overflow: 'hidden',
             maxWidth: '10em',
             justifyContent: 'center',
-            border: '2px solid red',
+          }}
+        >
+          <Mongo className="icon" />
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            overflow: 'hidden',
+            maxWidth: '10em',
+            justifyContent: 'center',
+          }}
+        >
+          <Couch className="icon" />
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            overflow: 'hidden',
+            maxWidth: '10em',
+            justifyContent: 'center',
+          }}
+        >
+          <Postgres className="icon" />
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            overflow: 'hidden',
+            maxWidth: '10em',
+            justifyContent: 'center',
+          }}
+        >
+          <MySQL className="icon" />
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            overflow: 'hidden',
+            maxWidth: '10em',
+            justifyContent: 'center',
           }}
         >
           <Jenkins className="icon" />
@@ -170,7 +218,6 @@ const Skills = () => {
             overflow: 'hidden',
             maxWidth: '10em',
             justifyContent: 'center',
-            border: '2px solid red',
           }}
         >
           <Travis className="icon" />

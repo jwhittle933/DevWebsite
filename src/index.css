@@ -145,6 +145,8 @@ img {
  background-color: #51718C;
  transition: all 0.1s linear;
  cursor: pointer;
+ text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+ text-transform: uppercase;
 }
 .item-large > a {
     color: #D9C8B4;
@@ -196,7 +198,7 @@ img {
     background-image: url(./img/front-wedding.jpg);
     background-size: 150%;
     background-repeat: no-repeat;
-    background-position: 0em -29em;
+    background-position: 0em -25em;
     background-attachment: scroll;
     height: 100%;
     width: 100%;
@@ -368,27 +370,34 @@ img {
   text-decoration: none;
 }
 .skills {
-    overflow: auto;
     padding: 1em;
-    height: 100%;
+    width: 100%;
+    height: 98%;
 }
-.skills::-webkit-scrollbar {
-    width: 6px;
+.skills > span {
+    margin-bottom: 1em;
 }
-.skills::-webkit-scrollbar-thumb {
-    background-color: #000000;
+.wrapper::-webkit-scrollbar {
+    width: 0.5em;
+}
+.wrapper::-webkit-scrollbar-thumb {
+    background-color: #A3B2C3;
+    border-radius: 8px;
 }
 
-.skills::-webkit-scrollbar-track {
+.wrapper::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #f5f5f5;
+    background-color: #1A3F69;
+    border-radius: 8px;
 }
 
 .skill {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fit, 200px);
+    grid-row-gap: 1em;
     margin-bottom: 2em;
+    padding-left: 2em;
 }
 .skill .icon {
     display: flex;
@@ -397,7 +406,6 @@ img {
     flex-shrink: 1;
     width: 10em;
     height: 10em;
-    border: 1px solid red;
 }
 .skill .text {
     padding: 1em;
@@ -468,6 +476,11 @@ img {
 .figure-div {
   position: fixed;
   width: 30%;
+}
+.about {
+    height: 98%;
+    width: 100%;
+    padding-left: 2em;
 }
 .about-figure {
   width: 200%;
