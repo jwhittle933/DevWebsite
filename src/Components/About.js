@@ -4,12 +4,12 @@ import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'
 const About = () => {
   return (
     <div className="wrapper about">
+      {'About Me'.split('').map(l => (
+        <span className="view-header-item" data-letter={l}>
+          {l}
+        </span>
+      ))}
       <div className="about-content">
-        {'About Me'.split('').map(l => (
-          <span className="view-header" data-letter={l}>
-            {l}
-          </span>
-        ))}
         <p>
           I'm currently employed as a software engineer at{' '}
           <a

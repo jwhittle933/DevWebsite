@@ -4,7 +4,7 @@ import { Facebook, Twitter, Instagram, Linkedin } from 'grommet-icons'
 const Contact = () => (
   <div className="wrapper contact">
     {'Contact'.split('').map(l => (
-      <span className="view-header" data-letter={l}>
+      <span className="view-header-item" data-letter={l}>
         {l}
       </span>
     ))}

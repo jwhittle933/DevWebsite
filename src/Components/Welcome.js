@@ -28,7 +28,16 @@ const featureTexts = [
         >
           eltoro.com
         </a>{' '}
-        in Louisville, KY.
+        in Louisville, KY. Mentor at{' '}
+        <a
+          className="link"
+          href="https://exercism.io/tracks/javascript/mentors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          exercism.io
+        </a>
+        .
       </p>,
     ],
   },

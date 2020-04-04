@@ -36,7 +36,7 @@ const projects = [
 const Projects = () => (
   <div className="wrapper projects">
     {'Work'.split('').map(l => (
-      <span className="view-header" data-letter={l}>
+      <span className="view-header-item" data-letter={l}>
         {l}
       </span>
     ))}
