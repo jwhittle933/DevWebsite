@@ -49,10 +49,18 @@ const About = () => {
           my German. The original intention was to enter the pastorate, but my
           course has changed slightly since then. In January of 2019 I started
           the doctoral process by entering the Th.M (Master of Theology) under
-          Dr. Peter Gentry. My Th.M thesis is a translation study of Old Greek
-          Proverbs. During my studies I was employed by the seminary as a help
-          desk technician, servicing computers and handling classroom-related
-          tech needs.
+          Dr. Peter Gentry. You can checkout my research{' '}
+          <a
+            className="link"
+            href="https://github.com/jwhittle933/thesis-research"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            here
+          </a>
+          . My Th.M thesis is a translation study of Old Greek Proverbs. During
+          my studies I was employed by the seminary as a help desk technician,
+          servicing computers and handling classroom-related tech needs.
         </p>
         <p>
           In December 2020, I took over as the principal engineer at{' '}

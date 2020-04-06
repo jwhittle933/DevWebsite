@@ -20,7 +20,9 @@ import { ReactComponent as Postgres } from './misc/PostgreSQL-01.svg'
 import { ReactComponent as MySQL } from './misc/MySQL_1012821.svg'
 import { ReactComponent as Couch } from './misc/apache_couchdb-icon.svg'
 import { ReactComponent as Emacs } from './misc/Emacs.svg'
+import { ReactComponent as Spacemacs } from './misc/Spacemacs.svg'
 import { ReactComponent as Vim } from './misc/Vim.svg'
+import LinkList from './components/LinkList'
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
 const Phoenix = () => {
@@ -109,28 +111,141 @@ const History = () => {
       </p>
       <p>
         After completing these tracks I started to dive into others, like C#,
-        Python, and Go. As well, I spent time reading programming books and
-        using other resources like Laracasts.
+        Python, Swift, and Go. As well, I spent time reading programming books
+        and using other resources like Laracasts, freeCodeCamp, Code Academy,
+        and HackerRank. I also started blending my academic interests (Ancient
+        Near Eastern Language and Linguistics) with my programming interests.
+      </p>
+      <p>
+        In 2019, I started working at{' '}
+        <a
+          className="link"
+          href="https://eltoro.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          eltoro.com
+        </a>{' '}
+        located in downtown Louisville. I also started my doctoral studies under
+        Dr. Peter Gentry in Ancient Near Eastern Language and Linguistics,
+        focusing specifically on the Old Greek (Septuagint) translation of
+        Proverbs. At eltoro, I've built web applications with JavaScript
+        (React), servers in Elixir, servers, lambdas, and tooling in Go, and
+        database scripts in Python. In my freetime, I've built front- and
+        back-end{' '}
+        <LinkList
+          links={[
+            {
+              text: 'This Site',
+              href: 'https://github.com/jwhittle933/jonathanwhittledev.com',
+            },
+            {
+              text: 'Adapter API',
+              href: 'https://github.com/jwhittle933/adapter-app-api',
+            },
+            {
+              text: '_D API',
+              href: 'https://github.com/jwhittle933/UnderDevelopmentAPI',
+            },
+            {
+              text: '_D Web App',
+              href: 'https://github.com/jwhittle933/UnderDevelopmentUI',
+            },
+            {
+              text: 'ItsTheWhittleThings',
+              href: 'https://github.com/jwhittle933/itsthewhittlethings',
+            },
+            {
+              text: 'Elixirbot',
+              href: 'https://github.com/jwhittle933/Elixirbot',
+            },
+          ]}
+          text="web applications"
+        />
+        ,{' '}
+        <LinkList
+          text="packages"
+          links={[
+            { text: 'funked', href: 'https://github.com/jwhittle933/funked' },
+            {
+              text: 'gomemory',
+              href: 'https://github.com/jwhittle933/gomemory',
+            },
+            {
+              text: 'httpizza',
+              href: 'https://github.com/jwhittle933/httpizza',
+            },
+            {
+              text: 'docxology',
+              href: 'https://github.com/jwhittle933/docxology',
+            },
+          ]}
+        />
+        ,{' '}
+        <LinkList
+          text="various tools"
+          links={[
+            { text: 'gonew', href: 'https://github.com/jwhittle933/gonew' },
+            {
+              text: 'metallurgy',
+              href: 'https://github.com/jwhittle933/metallurgy',
+            },
+            {
+              text: 'metallurgygo',
+              href: 'https://github.com/jwhittle933/metallurgy',
+            },
+            {
+              text: 'burrow',
+              href: 'https://github.com/jwhittle933/burrow',
+            },
+            {
+              text: 'Bible Texts',
+              href: 'https://github.com/jwhittle933/bible_texts',
+            },
+          ]}
+        />{' '}
+        as well as a{' '}
+        <a
+          className="link"
+          href="https://github.com/jwhittle933/tf-ibrith"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Hebrew image classifier
+        </a>{' '}
+        with TensorFlow, Python, and Go. A year after starting at eltoro, I
+        became the principal software engineer for{' '}
+        <a
+          className="link"
+          href="https://hexapla.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          The Hexapla Institute
+        </a>
+        . My primary responsibility is to maintain the Contributor portal, where
+        scholars from around the world will study Greek, Syriac, and Latin
+        manuscripts that contain Hexaplaric material and record their data. The
+        chief end of the institute is to replace Field's 19th century critical
+        edition of the Hexaplaric fragments. The software was originally written
+        in ASP.NET, but the newest iteration will have a Vue web application and
+        a Golang API. The second iteration will feature a manuscript portal that
+        leverages language detection and processing to quicky transliterate and
+        parse manuscripts for the researcher's use.
       </p>
     </div>
   )
 }
 
-const SkillList = () => {
+const SkillList = ({ setSelectedText }) => {
   const [selectedFilter, setSelectedFilter] = useState('all')
 
   const withFilter = (...filters) => {
-    return (Component, props = {}) => {
-      const [isHovered, setIsHovered] = useState(false)
-
+    return (Component, props = {}, text = '') => {
       if ([...filters, 'all'].includes(selectedFilter)) {
         return (
-          <div
-            onClick={() => setIsHovered(!isHovered)}
-            className="icon-wrapper"
-          >
+          <div onClick={() => setSelectedText(text)} className="icon-wrapper">
             <Component {...props} />
-            {isHovered && <p className="icon-text">Text</p>}
           </div>
         )
       }
@@ -240,11 +355,15 @@ const SkillList = () => {
         </div>
       </div>
       <div className="skill">
-        {withFilter('server', 'tools')(Golang, {
-          size: 'xlarge',
-          color: 'plain',
-          className: 'click icon',
-        })}
+        {withFilter('server', 'tools')(
+          Golang,
+          {
+            size: 'xlarge',
+            color: 'plain',
+            className: 'click icon',
+          },
+          `Go is my language of choice for almost any task. I've built web servers, cli tools, database scripts, AWS Lambda functions, https and docx packages, and more. I first stumbled into Go two years ago and haven't found any other language that encapsulates bare-metal programming with abstraction in the way Go does. Speed, safety, C-like syntax, cross-compililation, and an outstanding standard library (plus a very active community) commends this language time and time again. At The Hexapla Institute, I am committed to keeping Go on the backend for any server-side need that may arise.`,
+        )}
         {withFilter('browser')(Js, {
           size: 'xlarge',
           color: 'plain',
@@ -286,6 +405,13 @@ const SkillList = () => {
         {withFilter('tools')(Emacs, {
           className: 'click icon',
         })}
+        {withFilter('tools')(
+          Spacemacs,
+          {
+            className: 'click icon',
+          },
+          `I've been a dedicated Spacemacs user for over a year now, large due to the reliability of Emacs and integration with Vim. I enjoy writing Lisp, and Spacemacs presents a great opportunity to interact with the language in a practical way that increases my productivity every day.`,
+        )}
         {withFilter('tools')(Vim, {
           className: 'click icon',
         })}
@@ -333,8 +459,24 @@ const SkillList = () => {
   )
 }
 
+const SkillText = ({ text }) => {
+  return (
+    <div className="skill-text-wrapper">
+      <p className="skill-text">{text}</p>
+    </div>
+  )
+}
+
 const Skills = () => {
   const [activeTab, setActiveTab] = useState('history')
+  const [selectedSkillText, setSelectedSkillText] = useState('')
+
+  const selectText = text => {
+    if (text !== '' && text === selectedSkillText) {
+      return setSelectedSkillText('')
+    }
+    setSelectedSkillText(text)
+  }
 
   // TODO: Include a "uses" section that talks about editor, keyboard, etc.
   return (
@@ -368,8 +510,11 @@ const Skills = () => {
           )}
         </div>
       </div>
-      {activeTab === 'skills' && <SkillList />}
+      {activeTab === 'skills' && <SkillList setSelectedText={selectText} />}
       {activeTab === 'history' && <History />}
+      {selectedSkillText !== '' && activeTab === 'skills' && (
+        <SkillText text={selectedSkillText} />
+      )}
     </div>
   )
 }
