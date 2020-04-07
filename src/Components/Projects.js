@@ -1,16 +1,20 @@
 import React from 'react'
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
-const Heading = ({ title, href }) => {
+const Heading = ({ title, href = '' }) => {
   return (
     <div>
-      <h2 style={{ display: 'inline-block' }}>{title}</h2>
-      <a className="link" href={href} rel="noopener noreferrer" target="_blank">
-        <i
-          className="fa fa-external-link-alt"
-          style={{ fontSize: '1em', marginLeft: '6px' }}
-        />
-      </a>
+      <h2 style={{ display: 'inline-block', marginRight: '.25em' }}>{title}</h2>
+      {href !== '' && (
+        <a
+          className="link"
+          href={href}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i className="fab fa-github" style={{ fontSize: '1.5em' }} />
+        </a>
+      )}
     </div>
   )
 }
@@ -78,6 +82,40 @@ const Projects = () => (
       it has been connected to my personal Slack channel,{' '}
       <span className="_D">_D</span>. The server uses Cowboy to handle requests,
       rather than a full Phoenix server.
+    </p>
+    <Heading
+      title="Metallurgy"
+      href="https://github.com/jwhittle933/metallurgy"
+    />
+    <p>
+      Metallurgy is both a library and a compiled binary that converts jpg to
+      png and vise versa. It was created to assist converting png images of
+      Hebrew manuscripts to jpg images for TensorFlow. This repo is still
+      heavily under development.
+    </p>
+    <Heading title="httpizza" href="https://github.com/jwhittle933/httpizza" />
+    <p>
+      httpizza is a wrapper api around the Golang net/http package. The
+      functionality is heavily abbreviated (on purpose) to expose a much smaller
+      api for quicker and more elegant requests, espcially when you don't need
+      access to the full net or net/http package. There are large changes in the
+      works to make this much more elegant, consistent, and easy to use.
+    </p>
+    <Heading
+      title="tf-ibrith"
+      href="https://github.com/jwhittle933/tf-ibrith"
+    />
+    <p>
+      tf-ibrith is as Hebrew language image classifier, using TensorFlow. The
+      image classifier is written in Go, but the training scripts are my own
+      adaptation of TF's internal <code className="code">retrain.py</code>.
+      Right now, the model is trained on a subset of the Hebrew characters from
+      manuscripts from Qumran, and has the capability to classify with a small
+      percentage of error. The model will eventually be extended to include
+      Hellenistic Greek manuscripts, and will identify, transcribe, and parse
+      all grammatical forms found within a manuscript. This will allow for a
+      concordance of manuscripts to be created and better analysis of
+      questionable or uncertain forms.
     </p>
   </div>
 )
