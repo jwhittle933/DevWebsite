@@ -15,7 +15,7 @@ const LinkList = ({ links, text }) => {
         <div className="link-list-items">
           {links.map((l, i) => (
             <a
-              className="link"
+              className=""
               href={`${l.href}`}
               target="_blank"
               rel="noopener noreferrer"

@@ -1,37 +1,19 @@
 import React from 'react'
-import Transliterator from '../img/TransliteratorUI.png'
-import TechApp from '../img/TechAppUI.gif'
-import ItsTheWhittleThings from '../img/ItsTheWhittleThingsUI.gif'
-import BookCatalog from '../img/BookCatalogUI.gif'
-import JJJ from '../img/JJJUI.gif'
+import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
-const projects = [
-  {
-    title: 'Transliterator',
-    url: 'https://github.com/jwhittle933/Transliterator',
-    gif: Transliterator,
-  },
-  {
-    title: 'TechApp',
-    url: 'https://github.com/jwhittle933/TechApp2.0',
-    gif: TechApp,
-  },
-  {
-    title: 'Its The Whittle Things',
-    url: 'https://github.com/jwhittle933/itsthewhittlethings',
-    gif: ItsTheWhittleThings,
-  },
-  {
-    title: 'Catalog',
-    url: 'https://github.com/jwhittle933/book_catalog',
-    gif: BookCatalog,
-  },
-  {
-    title: "Jonathan's Jump'n Jacks",
-    url: 'https://github.com/jwhittle933/JonathansJumpnJacks',
-    gif: JJJ,
-  },
-]
+const Heading = ({ title, href }) => {
+  return (
+    <div>
+      <h2 style={{ display: 'inline-block' }}>{title}</h2>
+      <a className="link" href={href} rel="noopener noreferrer" target="_blank">
+        <i
+          className="fa fa-external-link-alt"
+          style={{ fontSize: '1em', marginLeft: '6px' }}
+        />
+      </a>
+    </div>
+  )
+}
 
 const Projects = () => (
   <div className="wrapper projects">
@@ -40,40 +22,62 @@ const Projects = () => (
         {l}
       </span>
     ))}
-    <p>
-      Most of these projects are in progress and can be viewed on{' '}
+    <p className="projects-title">
       <a
+        className="link"
         href="https://github.com/jwhittle933?tab=repositories"
         rel="noopener noreferrer"
         target="_blank"
       >
         GitHub
-      </a>
+      </a>{' '}
+      is the source of truth for all my projects. The following are those that I
+      consider noteworthy. As is the norm for any busy developer, all of these
+      are a work in progress.
     </p>
-    <div className="projects-flex">
-      {projects.map((project, index) => (
-        <div className="tile" key={index}>
-          <div className="tile-splash">
-            <img src={project.gif} alt="Example UI" />
-          </div>
-          <a href={project.url} rel="noopener noreferrer" target="_blank">
-            <div className="tile-bottom">
-              <p className="main-font font-lg">{project.title}</p>
-            </div>
-          </a>
-        </div>
-      ))}
-    </div>
-    <h2>Freelance</h2>
+    <Heading title="funked" href="https://github.com/jwhittle933/funked" />
     <p>
+      My commitment to and enjoyment of the functional paradigm led me to start
+      a full-featured functional{' '}
       <a
-        href="http://www.philosophipotamus.com"
+        className="link"
+        href="https://github.com/jwhittle933/funked"
         rel="noopener noreferrer"
         target="_blank"
       >
-        Philosophipotamus.com
-      </a>
-      : A philosophical website for Dr. Mark Coppenger. A WordPress site.
+        library
+      </a>{' '}
+      for Go. Strong typing and lack of generics in Go make it almost a
+      necessity for each project to include its own functional helper methods;
+      funked aims to encapsulate these things in a single repo, accounting for
+      Go's type system (without using interfaces and type assertions).
+    </p>
+    <Heading
+      title="Bible Texts Seeder"
+      href="https://github.com/jwhittle933/bible_texts"
+    />
+    <p>
+      As an academic in the field of Ancient Near Eastern Languages, it can be
+      difficult to carry around 5 or 6 books that contain the texts you're
+      studying (they're also quite expensive). The software solutions that seek
+      to alleviate this problem, such as Accordance or Logos, are wonderful
+      tools, but require you to run an entire application and interact with it
+      in the way they've designed. This repo facilitates the local or remote
+      storage of the Hebrew Bible and Septuagint in Postgres (more db support
+      coming in the future.) This will allow anyone with the data to build a
+      convenient application around it for their own needs.
+    </p>
+    <Heading
+      title="Elixirbot"
+      href="https://github.com/jwhittle933/Elixirbot"
+    />
+    <p>
+      Elixirbot is a simple server that accepts request bodies with valid Elixir
+      code, compiles it, and returns a formatted response with the evaluation of
+      the code. It was designed to meet Slack's requirements for a slackbot, and
+      it has been connected to my personal Slack channel,{' '}
+      <span className="_D">_D</span>. The server uses Cowboy to handle requests,
+      rather than a full Phoenix server.
     </p>
   </div>
 )

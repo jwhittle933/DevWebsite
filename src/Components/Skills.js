@@ -12,6 +12,7 @@ import { ReactComponent as Bash } from './misc/Gnu-bash-logo.svg'
 import { ReactComponent as IBM } from './misc/IBM-01.svg'
 import { ReactComponent as Heroku } from './misc/heroku-logo-stroke-purple.svg'
 import { ReactComponent as Jenkins } from './misc/Jenkins-01.svg'
+import { ReactComponent as Docker } from './misc/docker.svg'
 import { ReactComponent as Travis } from './misc/Travis-CI-01.svg'
 import { ReactComponent as Actions } from './misc/GHActions.svg'
 import { ReactComponent as Jest } from './misc/Jest-01.svg'
@@ -34,7 +35,7 @@ const Phoenix = () => {
         fontSize: '10em',
         color: 'rgb(245,112,56)',
       }}
-      className="icon fab fa-phoenix-framework"
+      className="icon fab fa-phoenix-framework click"
     />
   )
 }
@@ -48,7 +49,7 @@ const PHP = () => {
         fontSize: '10em',
         color: 'rgb(77,88,143)',
       }}
-      className="icon fab fa-php"
+      className="icon fab fa-php click"
     />
   )
 }
@@ -62,7 +63,7 @@ const Git = () => {
         fontSize: '10em',
         color: 'rgb(240,81,51)',
       }}
-      className="icon fab fa-git-square"
+      className="icon fab fa-git-square click"
     />
   )
 }
@@ -84,6 +85,7 @@ const AWS = () => {
 const History = () => {
   return (
     <div className="skills-history">
+      <h2>My Journey Into Software</h2>
       <p>
         After gradutating from Clemson with a degree in Philosophy, I went to
         work as a musician for a church in the area. The goal at the time was to
@@ -110,12 +112,26 @@ const History = () => {
         solved problems that I encountered on a daily basis.
       </p>
       <p>
-        After completing these tracks I started to dive into others, like C#,
-        Python, Swift, and Go. As well, I spent time reading programming books
-        and using other resources like Laracasts, freeCodeCamp, Code Academy,
-        and HackerRank. I also started blending my academic interests (Ancient
-        Near Eastern Language and Linguistics) with my programming interests.
+        After completing these tracks I started others, like C#, Python, Swift,
+        and Go. As well, I spent time reading programming books and using other
+        resources like Laracasts, freeCodeCamp, Code Academy, and HackerRank. I
+        also started blending my academic interests (Ancient Near Eastern
+        Language and Linguistics) with my programming interests by creating an
+        ancient language{' '}
+        <a
+          className="link"
+          href="https://github.com/jwhittle933/Transliterator"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          transliterator
+        </a>
+        . I've completed numerous courses on Udemy, including the full spectrum
+        of Go, Rust, Elixir, Erlang, as well as machine learning and language
+        processing with Python. I've also picked up C by participating in
+        Harvard's cs50 through edx.{' '}
       </p>
+      <h2>What I Do Now</h2>
       <p>
         In 2019, I started working at{' '}
         <a
@@ -126,13 +142,91 @@ const History = () => {
         >
           eltoro.com
         </a>{' '}
-        located in downtown Louisville. I also started my doctoral studies under
-        Dr. Peter Gentry in Ancient Near Eastern Language and Linguistics,
-        focusing specifically on the Old Greek (Septuagint) translation of
-        Proverbs. At eltoro, I've built web applications with JavaScript
-        (React), servers in Elixir, servers, lambdas, and tooling in Go, and
-        database scripts in Python. In my freetime, I've built front- and
-        back-end{' '}
+        located in downtown Louisville. I'm a member of the UI team and the task
+        lead over a small subset of our UI team called UI-services. At a
+        high-level, the UI-services team oversees the integration and deployment
+        of our web applications. On most days, I work on authenticated
+        deployment and data solutions with Go, but occasionally write
+        JavaScript, Elixir, and Python as well. Recently, I've spent a lot of
+        time geocoding in Go. As well, I comfortable in databases and regularly
+        use Postgres and Mongo. I'm also a dedicated Spacemacs user (and you
+        should be too), which has me writing Emacs Lisp on a regular basis. You
+        can check my config{' '}
+        <a
+          className="link"
+          href="https://github.com/jwhittle933/spacemacs-config"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          here
+        </a>
+        . When it's more convientient, I use Vim. You can find that config{' '}
+        <a
+          className="link"
+          href="https://github.com/jwhittle933/vim-config"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          here
+        </a>
+        . I also enjoy the Racket flavor of Lisp and have been{' '}
+        <a
+          className="link"
+          href="https://github.com/jwhittle933/racket"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          experimenting
+        </a>{' '}
+        with various practical applications for the language. I've breifly
+        interacted with Scheme as well by reading Structure and Interpretation
+        of Computer Programs.
+      </p>
+      <p>
+        A year after starting at eltoro, I became the principal software
+        engineer for{' '}
+        <a
+          className="link"
+          href="https://hexapla.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          The Hexapla Institute
+        </a>
+        , an international collaboration between The Southern Baptist
+        Theological Seminary (Dr. Peter Gentry), Oxford Univeristy (Dr. Alison
+        Salvesen), and Vrije Univeristeit Amsterdam (Dr. Bas ter Haar Romeny).
+        The purpose of the institute is to update Frederick Field's 19th century
+        critical edition of Origen's{' '}
+        <a
+          className="link"
+          href="https://en.wikipedia.org/wiki/Hexapla"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Hexaplaric Fragements
+        </a>{' '}
+        based on new manuscript evidence and techniques. My primary
+        responsibility is to build and maintain the Contributor portal, where
+        scholars from around the world will study Greek, Syriac, and Latin
+        manuscripts that contain Hexaplaric material and record their data. The
+        software was originally written in ASP.NET, but the newest iteration
+        will have a Vue web application and a Golang API. The second iteration
+        will feature a manuscript portal that leverages language detection and
+        processing to quicky transliterate and parse manuscripts for the
+        researcher's use. A prototype can be found{' '}
+        <a
+          className="link"
+          href="https://hexapla-web.herokuapp.com/#/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          here
+        </a>
+        . Our database is CouchDB hosted on IBM's Cloudant.
+      </p>
+      <p>
+        In my freetime I've built front- and back-end{' '}
         <LinkList
           links={[
             {
@@ -156,8 +250,12 @@ const History = () => {
               href: 'https://github.com/jwhittle933/itsthewhittlethings',
             },
             {
-              text: 'Elixirbot',
-              href: 'https://github.com/jwhittle933/Elixirbot',
+              text: 'Transliterator API',
+              href: 'https://github.com/jwhittle933/transliteratorAPI',
+            },
+            {
+              text: 'Transliterator UI',
+              href: 'https://github.com/jwhittle933/transliteratorUI',
             },
           ]}
           text="web applications"
@@ -179,6 +277,10 @@ const History = () => {
               text: 'docxology',
               href: 'https://github.com/jwhittle933/docxology',
             },
+            {
+              text: 'metallurgy',
+              href: 'https://github.com/jwhittle933/metallurgy',
+            },
           ]}
         />
         ,{' '}
@@ -186,10 +288,6 @@ const History = () => {
           text="various tools"
           links={[
             { text: 'gonew', href: 'https://github.com/jwhittle933/gonew' },
-            {
-              text: 'metallurgy',
-              href: 'https://github.com/jwhittle933/metallurgy',
-            },
             {
               text: 'metallurgygo',
               href: 'https://github.com/jwhittle933/metallurgy',
@@ -202,6 +300,10 @@ const History = () => {
               text: 'Bible Texts',
               href: 'https://github.com/jwhittle933/bible_texts',
             },
+            {
+              text: 'Elixirbot',
+              href: 'https://github.com/jwhittle933/Elixirbot',
+            },
           ]}
         />{' '}
         as well as a{' '}
@@ -213,25 +315,35 @@ const History = () => {
         >
           Hebrew image classifier
         </a>{' '}
-        with TensorFlow, Python, and Go. A year after starting at eltoro, I
-        became the principal software engineer for{' '}
+        with TensorFlow, Python, and Go. My newest interest is Rust, and I'm
+        currently working on a{' '}
         <a
           className="link"
-          href="https://hexapla.org"
+          href="https://github.com/jwhittle933/session-server"
           target="_blank"
           rel="noopener noreferrer"
         >
-          The Hexapla Institute
-        </a>
-        . My primary responsibility is to maintain the Contributor portal, where
-        scholars from around the world will study Greek, Syriac, and Latin
-        manuscripts that contain Hexaplaric material and record their data. The
-        chief end of the institute is to replace Field's 19th century critical
-        edition of the Hexaplaric fragments. The software was originally written
-        in ASP.NET, but the newest iteration will have a Vue web application and
-        a Golang API. The second iteration will feature a manuscript portal that
-        leverages language detection and processing to quicky transliterate and
-        parse manuscripts for the researcher's use.
+          session-server
+        </a>{' '}
+        to handle user sessions for The Hexapla Institute. As both an academic
+        and a software engineer, I'm particularly interested in how software can
+        advance our ability to study ancient texts.
+      </p>
+      <p>
+        I've been a mentor on{' '}
+        <a
+          className="link"
+          href="https://exercism.io"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          exercism.io
+        </a>{' '}
+        for over a year now on the JavaScript track, though I've thought about
+        expanding that to include Go and Elixir as well. I also maintian a slack
+        channel called Under Development (<span className="_D">_D </span>
+        for short), where I mentor a handful of up-and-coming developers, as
+        well as maintain contact with developers, including one who mentored me.
       </p>
     </div>
   )
@@ -362,49 +474,105 @@ const SkillList = ({ setSelectedText }) => {
             color: 'plain',
             className: 'click icon',
           },
-          `Go is my language of choice for almost any task. I've built web servers, cli tools, database scripts, AWS Lambda functions, https and docx packages, and more. I first stumbled into Go two years ago and haven't found any other language that encapsulates bare-metal programming with abstraction in the way Go does. Speed, safety, C-like syntax, cross-compililation, and an outstanding standard library (plus a very active community) commends this language time and time again. At The Hexapla Institute, I am committed to keeping Go on the backend for any server-side need that may arise.`,
+          `Go is my language of choice for almost any task. I've built web servers, cli tools, database scripts, AWS Lambda functions, https and docx packages, and more. I first stumbled into Go two years ago and haven't found any other language that encapsulates bare-metal programming with abstraction in the way Go does. Speed, safety, C-like syntax, cross-compililation, and an outstanding standard library (plus a very active community) commends this language time and time again. At The Hexapla Institute, Go is our primary back-end language. I also have extensive experience geocoding in Go with the assistance of Elasticsearch and Uber's H3 Golang port.`,
         )}
-        {withFilter('browser')(Js, {
-          size: 'xlarge',
-          color: 'plain',
-          className: 'click icon',
-        })}
-        {withFilter('server')(Node, {
-          size: 'xlarge',
-          color: 'plain',
-          className: 'click icon',
-        })}
-        {withFilter('browser')(Reactjs, {
-          size: 'xlarge',
-          color: 'plain',
-          className: 'click icon',
-        })}
-        {withFilter('browser')(Vue, {})}
-        {withFilter('browser')(Sass, {})}
-        {withFilter('browser')(Jest, {})}
-        {withFilter('server')(Phoenix, {})}
-        {withFilter('server', 'tools')(Python, {
-          className: 'click icon',
-        })}
-        {withFilter('server', 'tools')(Rust, {
-          color: 'plain',
-          className: 'click icon',
-        })}
-        {withFilter('tools')(Clang, {
-          className: 'click icon',
-        })}
-        {withFilter('server')(Csharp, {
-          className: 'click icon',
-        })}
-        {withFilter('server')(Erlang, {
-          className: 'click icon',
-        })}
-        {withFilter('server', 'tools')(Racket, {
-          className: 'click icon',
-        })}
-        {withFilter('tools')(Emacs, {
-          className: 'click icon',
-        })}
+        {withFilter('browser')(
+          Js,
+          {
+            size: 'xlarge',
+            color: 'plain',
+            className: 'click icon',
+          },
+          `JavaScript was the first language that I felt comfortable in. I'm proficient in both vanilla JS and the popular libraries/frameworks. I'm also very comfortable in Node/Express.`,
+        )}
+        {withFilter('server')(
+          Node,
+          {
+            size: 'xlarge',
+            color: 'plain',
+            className: 'click icon',
+          },
+          `I've done a fair amount of server-side programming in Node, including Express. As a philosophical approach, however, I don't prefer to use JavaScript on the server.`,
+        )}
+        {withFilter('browser')(
+          Reactjs,
+          {
+            size: 'xlarge',
+            color: 'plain',
+            className: 'click icon',
+          },
+          `I've written more React than any other popular library. I'm very proficient with the class-based paradigm as well the new functional approach with hooks (and 100% prefer the latter). This site is a React SPA hosted from an S3 bucket.`,
+        )}
+        {withFilter('browser')(
+          Vue,
+          {},
+          `I enjoy Vue more than any other front-end library. Native scss support (with vue cli), templating, and lifecycle hooks make it a joy to work with. The component system makes for a beautiful form of encapsulation that just not well defined in other libraries (like React). At The Hexapla Institute, our current site is build using vuepress, but the new version will feature Vue web application.`,
+        )}
+        {withFilter('browser')(
+          Sass,
+          {},
+          `I've written SASS (SCSS) in both for both React and Vue applications. Though this site is built with pure css, I do enjoy the additional functionality that SCSS enables. My favorite SCSS library is Bulma.`,
+        )}
+        {withFilter('browser')(
+          Jest,
+          {},
+          `Because Jest ships with every create-react-app, I've used Jest extensively. In general I approach every software application (especially back-end) with a TDD approach.`,
+        )}
+        {withFilter('server')(
+          Phoenix,
+          {},
+          `I'm sure some of you saw this icon and had no idea what it was. I've used Elixir and the Phoenix framework both professionally and personally and find the language to be one of the most enjoyable and reliable back-end languages in existence. Though Go is my preferred multi-purpose, multi-paradigm language of choice, for scalability and maintainability Elixir is without a doubt my favorite web-server/api language. The only drawback is its obscurity. I've build web-servers, apis, as well as command line tooling and packages. My most recent project was Elixirbot, an integrated Elixir slackbot that lets you execute and share code snippets in Slack.`,
+        )}
+        {withFilter('server', 'tools')(
+          Python,
+          {
+            className: 'click icon',
+          },
+          `Python is a language that I stumble into when I need to do something quickly, convientiently, and only once. As such, I've written a many database and file processing scripts. I've spent a fair amount of time with TensorFlow and machine learning, which will play an enormous role in the future for The Hexapla Institute.`,
+        )}
+        {withFilter('server', 'tools')(
+          Rust,
+          {
+            color: 'plain',
+            className: 'click icon',
+          },
+          `Rust is my newest facination. Safety, speed, and a functional paradigm commend Rust as the most impressive modern language. The only drawback is the startup cost for developers who've never had to think bare-metal before. I'm currently building a session-server for The Hexapla Institute.`,
+        )}
+        {withFilter('tools')(
+          Clang,
+          {
+            className: 'click icon',
+          },
+          `C is a recent interest of mine. I participated in Harvard's cs50 (without certificate), and have written a dozen or so scripts associtated with the class. My experience geocoding led me to Uber's H3 library, written entirely in C. Though the language has its obvious flaws, I find it compelling that some of the most impressive modern software (like H3 and TensorFlow) are written in C.`,
+        )}
+        {withFilter('server')(
+          Csharp,
+          {
+            className: 'click icon',
+          },
+          `For a brief period I was fascinated with C# and have worked with ASP, .NET, and LINQ. In Louisville (primarily because of the University), C# is king. On the whole I find the language a nuisance to work with.`,
+        )}
+        {withFilter('server')(
+          Erlang,
+          {
+            className: 'click icon',
+          },
+          `I've spent a breif amount of time with Erlang. Elixir compiles to Erlang and enables the full Erlang standard library as a part of its core api, which is where most of my familiarity comes from.`,
+        )}
+        {withFilter('server', 'tools')(
+          Racket,
+          {
+            className: 'click icon',
+          },
+          `I'm always looking for new projects that can be implemented in Racket. Though Lisp is usually considered an academic language, it's making its way into the mainstream and has greatly influenced how I think about code. I've recently spent some time building a web server with Racket.`,
+        )}
+        {withFilter('tools')(
+          Emacs,
+          {
+            className: 'click icon',
+          },
+          `Though I don't use bare Emacs, Spacemacs has helped me to gain proficiency in Emacs Lisp.`,
+        )}
         {withFilter('tools')(
           Spacemacs,
           {
@@ -412,48 +580,111 @@ const SkillList = ({ setSelectedText }) => {
           },
           `I've been a dedicated Spacemacs user for over a year now, large due to the reliability of Emacs and integration with Vim. I enjoy writing Lisp, and Spacemacs presents a great opportunity to interact with the language in a practical way that increases my productivity every day.`,
         )}
-        {withFilter('tools')(Vim, {
-          className: 'click icon',
-        })}
-        {withFilter('server')(PHP, {
-          className: 'click icon',
-        })}
-        {withFilter('tools')(Bash, {
-          className: 'click icon',
-        })}
-        {withFilter('tools')(Git, {
-          className: 'click icon',
-        })}
-        {withFilter('cloud')(AWS, {
-          className: 'click icon',
-        })}
-        {withFilter('cloud')(Heroku, {
-          className: 'click icon',
-        })}
-        {withFilter('cloud')(IBM, {
-          className: 'click icon',
-        })}
-        {withFilter('data')(Mongo, {
-          className: 'click icon',
-        })}
-        {withFilter('data')(Couch, {
-          className: 'click icon',
-        })}
-        {withFilter('data')(Postgres, {
-          className: 'click icon',
-        })}
-        {withFilter('data')(MySQL, {
-          className: 'click icon',
-        })}
-        {withFilter('integration')(Jenkins, {
-          className: 'click icon',
-        })}
-        {withFilter('integration')(Travis, {
-          className: 'click icon',
-        })}
-        {withFilter('integration')(Actions, {
-          className: 'click icon',
-        })}
+        {withFilter('tools')(
+          Vim,
+          {
+            className: 'click icon',
+          },
+          `I lean heavily on Vim integration with Spacemacs. When I'm working outside a project, in a single file or two, I typically opt for standard Vim.`,
+        )}
+        {withFilter('server')(
+          PHP,
+          {
+            className: 'click icon',
+          },
+          `PHP was the first server-side language that I learned. Though I'd never intentionally choose PHP for any of my projects, I do enjoy many aspects of Symphony/Laravel. I also maintain philosophipotamus.com, a WordPress site for the philosophical musings of Dr. Mark Coppenger.`,
+        )}
+        {withFilter('tools')(
+          Bash,
+          {
+            className: 'click icon',
+          },
+          `Every major project at some point requires a Bash script, and I've written a fair amount of them. Typically all my build and deploy scripts are written Bash. I've also recently been using bash for GitHub Actions CI with Docker.`,
+        )}
+        {withFilter('tools')(
+          Git,
+          {
+            className: 'click icon',
+          },
+          `I use git for every project, both professional and personal.`,
+        )}
+        {withFilter('tools', 'server')(
+          Docker,
+          {
+            className: 'click icon',
+          },
+          `I've used Docker extensively for a variety of tasks: web servers and databases in Docker on ECS/EC2/Fargate, run CI, cross-compiled Go binaries, and more.`,
+        )}
+        {withFilter('cloud')(
+          AWS,
+          {
+            className: 'click icon',
+          },
+          `I have extensive experience with AWS services, including ECS, EC2, ECR, Fargate, Lambda, S3, Cloudwatch, CloudFront, ElasticBeanstalk, and AWS Elasticsearch. I'm also well versed in the aws cli.`,
+        )}
+        {withFilter('cloud')(
+          Heroku,
+          {
+            className: 'click icon',
+          },
+          `Heroku is my preferred cloud host for beta deployment of personal apps. It's a very simple api that detects and build repos for you, and, best of all, its entirely free up to 5 apps. At The Hexapla Institute, we stage all our dev environments on Heroku (with the exception of CouchDB).`,
+        )}
+        {withFilter('cloud')(
+          IBM,
+          {
+            className: 'click icon',
+          },
+          `My experience with IBM cloud is still novel. At The Hexapla Institute, we host our CouchDB instance through IBM's Cloudant. We also have an instance of our Go api running on CloudFoundry.`,
+        )}
+        {withFilter('data')(
+          Mongo,
+          {
+            className: 'click icon',
+          },
+          `My interaction with MongoDB has typically been through Python and pymongo, but occasionally I get right in with the cli or through RoboMongo.`,
+        )}
+        {withFilter('data')(
+          Couch,
+          {
+            className: 'click icon',
+          },
+          `CouchDB is, in my opinion, the most impressive and simple NoSQL data option availible. Its simplicity commends it over both Elasicsearch and MongoDB. As a bonus, it's written in Erlang.`,
+        )}
+        {withFilter('data')(
+          Postgres,
+          {
+            className: 'click icon',
+          },
+          `Postgres is the default choice for any Elixir (with Ecto) application. I've also used Postgres with PostGIS and CartoDB for geocoding.`,
+        )}
+        {withFilter('data')(
+          MySQL,
+          {
+            className: 'click icon',
+          },
+          `MySQL was the first database that I became comfortable with, mainly through PHP (Laravel). I don't use it much anymore, but am still confortable with its nuances.`,
+        )}
+        {withFilter('integration')(
+          Jenkins,
+          {
+            className: 'click icon',
+          },
+          `I have a familiarity with Jenkins, but have opted for other CI/CD options in recent days.`,
+        )}
+        {withFilter('integration')(
+          Travis,
+          {
+            className: 'click icon',
+          },
+          `TravisCI is a cool technology and it's used on the repo for this site, and by default on most of my repos.`,
+        )}
+        {withFilter('integration')(
+          Actions,
+          {
+            className: 'click icon',
+          },
+          `GitHub Actions is probably the coolest new CI solution. Rather than hosting a Jenkins slave or enabling Travis, Actions enables basic CI with nothing more than a repo. As well, it leverages Docker and Bash to create a stunningly smooth experience.`,
+        )}
       </div>
     </>
   )

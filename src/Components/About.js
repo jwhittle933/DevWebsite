@@ -11,34 +11,28 @@ const About = () => {
       ))}
       <div className="about-content">
         <p>
-          I'm currently employed as a software engineer at{' '}
-          <a
-            className="link"
-            href="https://eltoro.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            eltoro.com
-          </a>{' '}
-          in Louisville, KY. I'm the task lead for what has recently come to be
-          called ui-services, a small subset of the UI team that handles
-          application deploy and serving, backend integrations, CI/CD, and
-          generally all data flow in and out of our web applications. On most
-          days, I work on deployment and data solutions with Go, but
-          occasionally write JavaScript, Elixir, and Python as well. Outside of
-          work Ive written in Rust, C, Lisp (Racket, Scheme, Emacs), C#, and
-          PHP.
+          I'm originally from Sumter, SC, where the summers are hot and the
+          winters are short. I've always been a jack of all trades, and over the
+          years I've gotten into skateboarding, paintball, model car building,
+          carpentry, cars, automotive sound systems, and music. The last one
+          stuck more than the others. I started playing guitar at 11, and by 17
+          I was playing in various bands and groups. I also play bass, drums,
+          piano, and used to be able to play the Sax, but those days may be long
+          behind me. Guitar of choice: Gibson Les Paul. I also grew up an avid
+          rifleman, and my dad is a gun collector of sorts.
         </p>
         <p>
           I'm a proud graduate of Clemson University (2013). Initially I entered
           the engineering program, having done engineering prep for two years in
           high-school. After starting down the road toward civil engineering, I
           soon realized that this path wasn't for me. So I swapped to Philosophy
-          with a minor in guitar performance. While at Clemson, I was an active
-          participant in FCA (Fellowship of Christian Athletes), and played
-          guitar for the chapter's in-house band for two years. I was also a
-          member of Crosspoint Church Clemson, where I later worked for 2 years
-          prior to moving to Kentucky.
+          with a minor in guitar performance. In Philosophy, I studied classical
+          and contemporary philosophy, metaphysics, existentialism, and even
+          philosophy of film (yep, that exists). While at Clemson, I was an
+          active participant in FCA (Fellowship of Christian Athletes), and
+          played guitar for the chapter's in-house band for two years. I was
+          also a member of Crosspoint Church Clemson, where I later worked for 2
+          years prior to moving to Kentucky.
         </p>
         <p>
           In December 2018 I graduated from The Southern Baptist Theological
@@ -46,7 +40,8 @@ const About = () => {
           Languages and Linguistics. In the course of my study, I learned
           Classical Hebrew, both Classical and Hellenistic Greek, Aramaic,
           Syriac, Ugaritic, a bit of Akkadian, Latin, and French. I also revived
-          my German. The original intention was to enter the pastorate, but my
+          my German. Linguistics combined with philosphy make me a professional
+          nitpicker. The original intention was to enter the pastorate, but my
           course has changed slightly since then. In January of 2019 I started
           the doctoral process by entering the Th.M (Master of Theology) under
           Dr. Peter Gentry. You can checkout my research{' '}
@@ -58,47 +53,11 @@ const About = () => {
           >
             here
           </a>
-          . My Th.M thesis is a translation study of Old Greek Proverbs. During
-          my studies I was employed by the seminary as a help desk technician,
+          . I also regularly fill in for Dr. Gentry teaching Greek and Hebrew
+          when he can't be present, and have graded for several of his courses.
+          My Th.M thesis is a translation study of Old Greek Proverbs. During my
+          studies I was employed by the seminary as a help desk technician,
           servicing computers and handling classroom-related tech needs.
-        </p>
-        <p>
-          In December 2020, I took over as the principal engineer at{' '}
-          <a
-            className="link"
-            href="https://hexapla.org"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            The Hexapla Institute
-          </a>
-          , an international collaboration between The Southern Baptist
-          Theological Seminary (Dr. Peter Gentry), Oxford Univeristy (Dr. Alison
-          Salvesen), and Vrije Univeristeit Amsterdam (Dr. Bas ter Haar Romeny).
-          The purpose of the institute is to update Frederick Field's 19th
-          century critical edition of Origen's{' '}
-          <a
-            className="link"
-            href="https://en.wikipedia.org/wiki/Hexapla"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Hexaplaric Fragements
-          </a>{' '}
-          based on new manuscript evidence and techniques. Along with Jeremy
-          Osborn, we are giving a face-lift to the public site and creating a
-          new portal for the contributors to study manuscripts, record data, and
-          ultimately produce a critical edition in print of their assigned book.
-          A prototype can be found{' '}
-          <a
-            className="link"
-            href="https://hexapla-web.herokuapp.com/#/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            here
-          </a>
-          .
         </p>
         <p>
           My wife (Emily) and I are originally from South Carolina, and one day
