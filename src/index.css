@@ -28,6 +28,9 @@ li {
   font-family: 'Raleway', serif;
   font-size: 1.2em;
 }
+h1 {
+    font-family: 'Merriweather';
+}
 h2 {
   font-family: 'Merriweather';
 }
@@ -435,6 +438,26 @@ img {
     display: inline-flex;
     align-items: center;
 }
+.projects .projects-heading .projects-link > i{
+    color: #49A695;
+}
+.projects .projects-heading .projects-link-href > i{
+    color: #49A695;
+}
+.projects .projects-heading .projects-link,
+.projects .projects-heading .projects-link-gh,
+.projects .projects-heading .projects-link-preview {
+    transition: all 0.2s ease;
+}
+.projects .projects-heading .projects-link-preview:hover {
+    transform: rotate(45deg) scale(1.1);
+}
+.projects .projects-heading .projects-link:hover {
+    transform: rotate(-45deg);
+}
+.projects .projects-heading .projects-link-href:hover > i {
+    color: #24292E;
+}
 .tile {
   position: relative;
   flex-grow: 1;
@@ -626,6 +649,70 @@ img {
   margin-left: 50%;
   margin-top: 10%;
 }
+
+.contact {
+    height: 99%;
+    width: 100%;
+    padding: 0 2.5em;
+    padding-top: 2em;
+    overflow-y: auto;
+}
+#map {
+    height: 100%;
+    border-radius: 8px;
+}
+.map-legend {
+    position: absolute;
+    top: 10em;
+    left: 5em;
+    width: 12em;
+    border-radius: 10px;
+    background-color: transparent;
+    z-index: 400;
+}
+.map-slide {
+    position: absolute;
+    top: 11em;
+    left: .8em;
+    height: 2em;
+    width: 1em;
+    border-radius: 20px;
+    background-color: #51718C;
+}
+.map-legend.dark {
+    color: white;
+}
+.map-legend.light{
+    color: black;
+}
+.map-legend > h2 {
+    font-family: Merriweather;
+    font-size: 2em;
+}
+.map-color {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 8em;
+    left: .3em;
+    width: 2em;
+    height: 6em;
+    z-index: 2;
+}
+.map-color > i {
+    font-size: 18px;
+    transition: transform 0.2s ease-in-out;
+}
+.map-color .sun{ color: 'white';}
+.map-color .moon{ color: 'white';}
+
+@keyframes mapload {
+    from { width: 50%; }
+    to { width: 100%; }
+}
+
 .footer {
     display: flex;
   align-items: center;

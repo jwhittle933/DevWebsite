@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ITWThings from '../img/ItsTheWhittleThingsUI.gif'
+import JJJ from '../img/JJJUI.gif'
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
-const Heading = ({ title, href = '' }) => {
+const Heading = ({ title, href = '', previewImg = '', link = '' }) => {
+  const [showPreview, setShowPreview] = useState(false)
+
   return (
-    <div>
+    <div className="projects-heading">
       <h2 style={{ display: 'inline-block', marginRight: '.25em' }}>{title}</h2>
       {href !== '' && (
         <a
-          className="link"
+          className="projects-link-href"
           href={href}
           rel="noopener noreferrer"
           target="_blank"
@@ -15,14 +19,58 @@ const Heading = ({ title, href = '' }) => {
           <i className="fab fa-github" style={{ fontSize: '1.5em' }} />
         </a>
       )}
+      {link !== '' && (
+        <a
+          className="projects-link"
+          href={link}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fas fa-link"
+            style={{
+              fontSize: '1.5em',
+            }}
+          />
+        </a>
+      )}
+      {previewImg !== '' && (
+        <div style={{ display: 'inline-block', position: 'relative' }}>
+          <i
+            className="fas fa-search projects-link-preview"
+            style={{
+              fontSize: '1.4em',
+              marginLeft: '6px',
+              color: '#52718C',
+              cursor: 'crosshair',
+            }}
+            onMouseEnter={() => setShowPreview(true)}
+            onMouseLeave={() => setShowPreview(false)}
+          />
+          {showPreview && (
+            <img
+              src={previewImg}
+              alt="Preview of Work"
+              style={{
+                position: 'absolute',
+                height: '15em',
+                width: '30em',
+                top: '-15em',
+                right: '-30em',
+                borderRadius: '8px',
+              }}
+            />
+          )}
+        </div>
+      )}
     </div>
   )
 }
 
 const Projects = () => (
   <div className="wrapper projects">
-    {'Work'.split('').map(l => (
-      <span className="view-header-item" data-letter={l}>
+    {'Work'.split('').map((l, i) => (
+      <span className="view-header-item" data-letter={l} key={i}>
         {l}
       </span>
     ))}
@@ -35,9 +83,38 @@ const Projects = () => (
       >
         GitHub
       </a>{' '}
-      is the source of truth for all my projects. The following are those that I
-      consider noteworthy. As is the norm for any busy developer, all of these
-      are a work in progress.
+      is the source of truth for all my personal projects. The following are
+      those that I still receive varying degrees of attention. As is the norm
+      for any busy developer, all of these are a work in progress.
+    </p>
+    <Heading
+      title="The Hexapla Institute"
+      link="https://hexapla-web.herokuapp.com/#/"
+    />
+    <p>
+      We are in heavy development cycle at The Hexapla Institute and will be for
+      some time. The link above will take you to the deployed demo version. The
+      current web app is built with Vue, served from Heroku (free dynos, expect
+      load times). The web application is divided into two parts: the public
+      site for information and the contributor portal. In the portal,
+      contributors will study manuscripts, collaborate, and record their data.
+      The goal is to replace Field's 19th century critical edition of the
+      Hexaplaric fragments, and one{' '}
+      <a
+        className="link"
+        href="https://www.peeters-leuven.be/detail.php?search_key=9789042937314&series_number_str=0"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        volume
+      </a>{' '}
+      in the new series has already been published. The software will imitate
+      the layout and formatting of the published work as the contributor adds
+      their data, and on completion will generate a docx/pdf for futher edits
+      and to send to the publisher. Our backend is build in Go and services all
+      the web app's data needs. It's entirely protected, but in the future we
+      may open the API up to subscribed consumers to use our language detection
+      models, manuscript data, etc.
     </p>
     <Heading title="funked" href="https://github.com/jwhittle933/funked" />
     <p>
@@ -88,9 +165,9 @@ const Projects = () => (
       href="https://github.com/jwhittle933/metallurgy"
     />
     <p>
-      Metallurgy is both a library and a compiled binary that converts jpg to
-      png and vise versa. It was created to assist converting png images of
-      Hebrew manuscripts to jpg images for TensorFlow. This repo is still
+      Metallurgy is both an Elixir library and a compiled binary that converts
+      jpg to png and vise versa. It was created to assist converting png images
+      of Hebrew manuscripts to jpg images for TensorFlow. This repo is still
       heavily under development.
     </p>
     <Heading title="httpizza" href="https://github.com/jwhittle933/httpizza" />
@@ -116,6 +193,40 @@ const Projects = () => (
       all grammatical forms found within a manuscript. This will allow for a
       concordance of manuscripts to be created and better analysis of
       questionable or uncertain forms.
+    </p>
+    <Heading
+      title="docxology"
+      href="https://github.com/jwhittle933/docxology"
+    />
+    <p>
+      docxology is a Microsoft Word .docx file parser package for Go. I created
+      the package when creating a language transliterator api to enable .docx
+      file uploads that would transliterate Hebrew or Greek text, write it to
+      the file submitted, and return a link for download.
+    </p>
+    <Heading
+      title="ItsTheWhittleThings"
+      href="https://github.com/jwhittle933/itsthewhittlethings"
+      previewImg={ITWThings}
+    />
+    <p>
+      ItsTheWhittleThings is a blog and e-commerce site designed for my wife,
+      Emily, to share her thought about life and sell her creations. The
+      application is built with Laravel and React.
+    </p>
+    <Heading
+      title="JonathansJumpnJacks"
+      href="https://github.com/jwhittle933/JonathansJumpnJacks"
+      previewImg={JJJ}
+    />
+    <p>
+      JonathansJumpnJacks is a BMR (Basal Metabolic Rate) calculator built with
+      React. I started lifting weights in highschool and have been lifting now
+      for almost 20 years. When I really in the zone, I count every calorie I
+      consume to ensure I'm gaining the most muscle mass or shedding the most
+      body fat possible. Knowing your BMR is integral to making the most of your
+      calories. This app provides a reliable calulation based on personal
+      metrics.
     </p>
   </div>
 )

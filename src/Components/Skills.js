@@ -147,11 +147,11 @@ const History = () => {
         high-level, the UI-services team oversees the integration and deployment
         of our web applications. On most days, I work on authenticated
         deployment and data solutions with Go, but occasionally write
-        JavaScript, Elixir, and Python as well. Recently, I've spent a lot of
-        time geocoding in Go. As well, I comfortable in databases and regularly
-        use Postgres and Mongo. I'm also a dedicated Spacemacs user (and you
-        should be too), which has me writing Emacs Lisp on a regular basis. You
-        can check my config{' '}
+        JavaScript, Elixir, and Python as well. I've spent a lot of time
+        geocoding in Go. As well, I'm comfortable in databases and regularly use
+        Postgres and Mongo. I'm also a dedicated Spacemacs user (and you should
+        be too), which has me writing Emacs Lisp on a regular basis. You can
+        check my config{' '}
         <a
           className="link"
           href="https://github.com/jwhittle933/spacemacs-config"
@@ -702,7 +702,7 @@ const Skills = () => {
   const [activeTab, setActiveTab] = useState('history')
   const [selectedSkillText, setSelectedSkillText] = useState('')
 
-  const selectText = text => {
+  const selectText = (text) => {
     if (text !== '' && text === selectedSkillText) {
       return setSelectedSkillText('')
     }

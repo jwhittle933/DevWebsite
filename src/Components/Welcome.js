@@ -27,8 +27,8 @@ const featureTexts = [
           rel="noopener noreferrer"
         >
           eltoro.com
-        </a>{' '}
-        in Louisville, KY. Mentor at{' '}
+        </a>
+        . Mentor at{' '}
         <a
           className="link"
           href="https://exercism.io/tracks/javascript/mentors"
@@ -116,6 +116,16 @@ const featureTexts = [
         The combination of my philosophical background with my current work in
         linguistics makes me a professional nit-picker.
       </p>,
+      <p>
+        Of particular philosophical interest is the philosophy of science and
+        the underlying assumptions of empiricism. Related to this is
+        epistemology, or the study of knowledge, i.e., how do we know what we
+        know? And how do you know that?
+      </p>,
+      <p>
+        During college I studied metaphysics, epistemology, both classical and
+        contemporary philosophy, as well as philosopy of film.
+      </p>,
     ],
   },
 ]
@@ -145,7 +155,7 @@ const TextRotation = ({ featureIndex, play }) => {
       <h2 className={`feature-text-header ${play && 'feature-rotate'}`}>
         {featureTexts[featureIndex].title}
       </h2>
-      {featureTexts[featureIndex].text.map(t => t)}
+      {featureTexts[featureIndex].text.map((t) => t)}
     </div>
   )
 }
@@ -154,7 +164,7 @@ const Welcome = () => {
   const [currentText, setCurrentText] = useState(featureTexts[0])
   const [play, setPlay] = useState(true)
 
-  const getIndex = ct => featureTexts.findIndex(i => i.title === ct.title)
+  const getIndex = (ct) => featureTexts.findIndex((i) => i.title === ct.title)
 
   useInterval(() => {
     if (!play) return

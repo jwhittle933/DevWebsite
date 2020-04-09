@@ -1,13 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
-import {
-  FacebookOption,
-  Twitter,
-  Instagram,
-  LinkedinOption,
-  Github,
-} from 'grommet-icons'
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
 const NavItem = ({ title, currentPage, icon, location, navToFunc }) => {
