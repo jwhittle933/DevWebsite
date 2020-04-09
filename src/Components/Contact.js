@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import L from 'leaflet'
 import me from '../img/front-wedding.jpg'
+import marker from '../img/iconfinder_map-marker_285659.png'
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
 const NASAtile =
@@ -15,30 +16,34 @@ const cartoLight =
 const stadia =
   'https:tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
 
-const tileLayer = L.tileLayer(stadia, {
-  attribution: 'stadia maps',
-})
-
-const markerIcon = L.icon({
-  iconUrl: me,
-  iconSize: [150, 100],
-})
-
 const Contact = () => {
   const [map, setMap] = useState()
   const [colorScheme, setColorScheme] = useState('dark')
+  const [layer, setLayer] = useState()
 
   useEffect(() => {
-    const map = L.map('map', {
+    const tileLayer = L.tileLayer(stadia, {
+      attribution: 'stadia | carto',
+    })
+    setLayer(tileLayer)
+
+    const m = L.map('map', {
       center: new L.LatLng(38.262, -85.7372),
       zoom: 13,
       minZoom: 3,
       layers: [tileLayer],
     })
 
-    map.zoomControl.setPosition('bottomright')
+    m.zoomControl.setPosition('bottomright')
 
-    L.marker([38.2776, -85.7372]).addTo(map)
+    const icon = L.icon({
+      iconUrl: marker,
+      iconSize: [40, 40],
+    })
+
+    L.marker([38.2776, -85.7372], { icon }).addTo(m)
+
+    setMap(m)
   }, [])
 
   const iconBase = {
@@ -67,6 +72,23 @@ const Contact = () => {
           {l}
         </span>
       ))}
+      <span
+        style={{
+          display: 'inline-flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '2em',
+          transform: 'translateY(-0.5em)',
+          marginLeft: '12px',
+          backgroundColor: 'rgba(2,16,38, 0.8)',
+          padding: '6px',
+          borderRadius: '10px',
+          fontFamily: 'Merriweather',
+          color: '#F2EEDA',
+        }}
+      >
+        <i className="fas fa-at" />: jonathan.m.whittle (gmail)
+      </span>
       <div
         style={{
           width: '100%',
@@ -78,8 +100,28 @@ const Contact = () => {
       >
         <div id="map" />
         <div className={`map-legend ${colorScheme}`}>
-          <h2>Location</h2>
-          <p>This is where the content will go</p>
+          <h2>I'm always open to hear about an opportunity</h2>
+          <p>
+            Relocation:
+            <span>
+              <i
+                className="fas fa-window-close"
+                style={{ color: 'red', marginLeft: '12px' }}
+              />
+            </span>
+          </p>
+          <p>
+            Remote:
+            <span>
+              <i
+                className="fas fa-check"
+                style={{ color: 'green', marginLeft: '12px' }}
+              />
+            </span>
+          </p>
+          <p>
+            Availability: <span>10-15 hrs/week</span>
+          </p>
         </div>
         <div className="map-color">
           <i
@@ -93,7 +135,7 @@ const Contact = () => {
                   ? ['dark', stadia]
                   : ['light', cartoLight]
               setColorScheme(next)
-              tileLayer.setUrl(tiles)
+              layer.setUrl(tiles)
             }}
           />
         </div>
