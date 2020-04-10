@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { withRouter } from 'react-router'
 
-import Header from './Header.jsx'
-import Welcome from './Welcome.jsx'
-import About from './About.jsx'
-import Developer from './Developer.jsx'
-import Projects from './Projects.jsx'
-import Contact from './Contact.jsx'
-import Footer from './Footer.jsx'
-import NotFound from './NotFound.jsx'
+import Menu from './Menu'
+import Welcome from './Welcome'
+import About from './About'
+import Skills from './Skills'
+import Projects from './Projects'
+import Contact from './Contact'
+import Footer from './Footer'
+import NotFound from './NotFound'
 
 export default class App extends Component {
   constructor() {
@@ -35,16 +34,15 @@ export default class App extends Component {
         <div className="App">
           <Router>
             <div className="main-view">
-              <Header location={withRouter} />
+              <Menu />
               <Switch>
                 <Route exact path="/" render={() => <Welcome />} />
                 <Route path="/about" render={() => <About />} />
-                <Route path="/developer" render={() => <Developer />} />
-                <Route path="/projects" render={() => <Projects />} />
+                <Route path="/skills" render={() => <Skills />} />
+                <Route path="/work" render={() => <Projects />} />
                 <Route path="/contact" render={() => <Contact />} />
                 <Route path="*" component={NotFound} />
               </Switch>
-              <Footer />
             </div>
           </Router>
         </div>

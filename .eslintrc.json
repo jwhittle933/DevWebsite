@@ -16,7 +16,7 @@
   "plugins": ["react", "jest"],
   "rules": {
     "arrow-spacing": 2,
-    "semi": [2, "never"],
+    "semi": [0, "never"],
     "camelcase": 2,
     "no-unused-vars": 1,
     "no-undef": 1,
