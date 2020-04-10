@@ -84,8 +84,8 @@ const Projects = () => (
         GitHub
       </a>{' '}
       is the source of truth for all my personal projects. The following are
-      those that I still receive varying degrees of attention. As is the norm
-      for any busy developer, all of these are a work in progress.
+      those that still receive varying degrees of attention. As is the norm for
+      any busy developer, all of these are a work in progress.
     </p>
     <Heading
       title="The Hexapla Institute"
@@ -131,7 +131,7 @@ const Projects = () => (
       for Go. Strong typing and lack of generics in Go make it almost a
       necessity for each project to include its own functional helper methods;
       funked aims to encapsulate these things in a single repo, accounting for
-      Go's type system (without using interfaces and type assertions).
+      Go's type system.
     </p>
     <Heading
       title="Bible Texts Seeder"
@@ -211,7 +211,7 @@ const Projects = () => (
     />
     <p>
       ItsTheWhittleThings is a blog and e-commerce site designed for my wife,
-      Emily, to share her thought about life and sell her creations. The
+      Emily, to share her thoughts about life and sell her creations. The
       application is built with Laravel and React.
     </p>
     <Heading

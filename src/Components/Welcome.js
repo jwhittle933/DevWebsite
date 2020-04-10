@@ -123,7 +123,7 @@ const featureTexts = [
         know? And how do you know that?
       </p>,
       <p>
-        During college I studied metaphysics, epistemology, both classical and
+        During college I studied metaphysics, existentialism, both classical and
         contemporary philosophy, as well as philosopy of film.
       </p>,
     ],
@@ -177,7 +177,7 @@ const Welcome = () => {
     }
 
     setCurrentText(featureTexts[ind + 1])
-  }, 10000)
+  }, 15000)
 
   return (
     <div className="wrapper">

@@ -18,8 +18,8 @@ const About = () => {
           stuck more than the others. I started playing guitar at 11, and by 17
           I was playing in various bands and groups. I also play bass, drums,
           piano, and used to be able to play the Sax, but those days may be long
-          behind me. Guitar of choice: Gibson Les Paul. I also grew up an avid
-          rifleman, and my dad is a gun collector of sorts.
+          behind me. My guitar of choice: Gibson Les Paul. I also grew up an
+          avid rifleman, and my dad is a gun collector of sorts.
         </p>
         <p>
           I'm a proud graduate of Clemson University (2013). Initially I entered
@@ -62,8 +62,8 @@ const About = () => {
         <p>
           My wife (Emily) and I are originally from South Carolina, and one day
           we hope to move back. Our son, Judson, was born in January 2019. He's
-          a living, breathing, indoor tornado, and we love every bit him. We are
-          members at Clifton Baptist Church in Louisville, Kentucky, where I
+          a living, breathing, indoor tornado, and we love every bit of him. We
+          are members at Clifton Baptist Church in Louisville, Kentucky, where I
           also serve as Deacon of Sound (or, as I've been called, the Earl of
           Audio).
         </p>

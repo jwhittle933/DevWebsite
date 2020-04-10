@@ -133,7 +133,7 @@ const History = () => {
       </p>
       <h2>What I Do Now</h2>
       <p>
-        In 2019, I started working at{' '}
+        In 2019 I started working at{' '}
         <a
           className="link"
           href="https://eltoro.com"
@@ -147,7 +147,7 @@ const History = () => {
         high-level, the UI-services team oversees the integration and deployment
         of our web applications. On most days, I work on authenticated
         deployment and data solutions with Go, but occasionally write
-        JavaScript, Elixir, and Python as well. I've spent a lot of time
+        JavaScript, Elixir, and Python as well. I've also spent a lot of time
         geocoding in Go. As well, I'm comfortable in databases and regularly use
         Postgres and Mongo. I'm also a dedicated Spacemacs user (and you should
         be too), which has me writing Emacs Lisp on a regular basis. You can
@@ -305,8 +305,8 @@ const History = () => {
               href: 'https://github.com/jwhittle933/Elixirbot',
             },
           ]}
-        />{' '}
-        as well as a{' '}
+        />
+        , as well as a{' '}
         <a
           className="link"
           href="https://github.com/jwhittle933/tf-ibrith"

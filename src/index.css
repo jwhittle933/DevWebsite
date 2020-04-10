@@ -263,7 +263,6 @@ img {
     font-size: 1.2em;
     font-weight: bold;
 }
-
 .feature-text-header {
     width: auto;
     position: relative;
@@ -283,7 +282,7 @@ img {
     width: 0;
 }
 .feature-rotate:before {
-    animation: load 10s linear infinite;
+    animation: load 15s linear infinite;
 }
 @keyframes load {
     from { width: 0; }
