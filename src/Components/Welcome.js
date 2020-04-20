@@ -15,7 +15,7 @@ const featureTexts = [
         though, given the choice, I'd never choose OOP.
       </p>,
       <p key="eng-3">
-        My language of choice is Go, but I also have a deep interest in Elixer
+        My language of choice is Go, but I also have a deep interest in Elixir
         and Rust. I write JavaScript and Python when the occasion calls for it.
       </p>,
       <p key="eng-4">
